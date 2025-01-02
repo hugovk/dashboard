@@ -1,0 +1,40 @@
+name: Test
+
+on: [push, pull_request, workflow_dispatch]
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/checkout@v4
+        with:
+          repository: hugovk/github-tools
+          path: github-tools
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Debug
+        run: |
+          pwd
+          ls -l
+
+      - name: Find potential closeable backports
+        run: |
+          uv run github-tools/potential_closeable_prs.py --dry-run
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
