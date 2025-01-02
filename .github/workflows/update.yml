@@ -28,11 +28,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
 
-      - name: Debug
-        run: |
-          pwd
-          ls -l
-
       - name: Find potential closeable backports
         run: |
           uv run github-tools/potential_closeable_prs.py --dry-run
