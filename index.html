@@ -27,7 +27,7 @@
     </table>
 
     <script>
-      fetch("potential_closeable_prs.json")
+      fetch("potential_closeable_issues.json")
         .then((response) => response.json())
         .then((data) => {
           const tableBody = document.querySelector("#data-table tbody");
