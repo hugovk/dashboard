@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  test:
+  update:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,7 +41,7 @@ jobs:
         run: |
           mkdir -p build
           cp index.html style.css build/
-          mv github-tools/potential_closeable_prs.json build/
+          mv github-tools/potential_closeable_issues.json build/
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
