@@ -33,7 +33,7 @@ jobs:
 
       - name: Find potential closeable backports
         run: |
-          uv run github-tools/potential_closeable_issues.py --dry-run --json
+          uv run github-tools/potential_closeable_issues.py --dry-run --json -n 10000
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
