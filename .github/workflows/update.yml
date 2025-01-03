@@ -40,6 +40,7 @@ jobs:
       - name: Prepare files
         run: |
           mkdir -p build
+          cp index.html style.css build/
           mv github-tools/potential_closeable_prs.json build/
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}

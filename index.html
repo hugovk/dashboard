@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+    <h2>Potentially closeable issues</h2>
+    <p>
+      These open CPython issues have their linked PRs merged. They're candidates for
+      closing.
+    </p>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Issue</th>
+          <th>Created</th>
+          <th>Updated</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      fetch("potential_closeable_prs.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const tableBody = document.querySelector("#data-table tbody");
+          data.candidates.forEach((candidate) => {
+            const row = document.createElement("tr");
+            const prNumberCell = document.createElement("td");
+            const titleCell = document.createElement("td");
+            const createdCell = document.createElement("td");
+            const updatedCell = document.createElement("td");
+            const authorCell = document.createElement("td");
+            const prNumberLink = document.createElement("a");
+            const titleLink = document.createElement("a");
+
+            prNumberLink.href = candidate.html_url;
+            prNumberLink.textContent = candidate.number;
+            prNumberCell.appendChild(prNumberLink);
+
+            titleLink.href = candidate.html_url;
+            titleLink.textContent = candidate.title;
+            titleCell.appendChild(titleLink);
+
+            createdCell.textContent = candidate.created_at.split("T")[0];
+            updatedCell.textContent = candidate.updated_at.split("T")[0];
+            createdCell.classList.add("created");
+            updatedCell.classList.add("updated");
+
+            authorCell.textContent = candidate.user.login;
+
+            row.appendChild(prNumberCell);
+            row.appendChild(titleCell);
+            row.appendChild(createdCell);
+            row.appendChild(updatedCell);
+            row.appendChild(authorCell);
+            tableBody.appendChild(row);
+          });
+
+          const lastUpdate = new Date(data.last_update);
+          const formattedLastUpdate = lastUpdate
+            .toISOString()
+            .slice(0, 19)
+            .replace("T", " ");
+          const lastUpdateParagraph = document.createElement("p");
+          lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}.`;
+          document.body.appendChild(lastUpdateParagraph);
+        })
+        .catch((error) => console.error("Error loading JSON:", error));
+    </script>
+  </body>
+</html>
