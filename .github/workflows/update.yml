@@ -1,6 +1,11 @@
-name: Test
+name: Update
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "16 15 * * *"
+  workflow_dispatch:
 
 env:
   FORCE_COLOR: 1
@@ -46,7 +51,9 @@ jobs:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
       - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
+        if: |
+          github.repository_owner == 'hugovk'
+          && github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
