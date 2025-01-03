@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #eee;
+  --text-color: #444;
+  --link-color: #090;
+  --link-hover-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+    --text-color: #ccc;
+    --link-color: #5bf;
+    --link-hover-color: black;
+  }
+}
+body {
+  margin-top: 15px;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+canvas,
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  /*margin:40px auto;*/
+  /*max-width: 650px;*/
+  padding: 0 10px;
+}
+pre {
+  text-align: left;
+}
+footer {
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(40px, auto);
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover,
+a:hover div {
+  color: var(--link-hover-color);
+  background-color: var(--link-color);
+  outline: 0.05em solid var(--link-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+td {
+  text-align: center;
+}
+td.created,
+td.updated {
+  white-space: nowrap;
+}
