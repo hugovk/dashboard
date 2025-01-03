@@ -5,6 +5,9 @@ on: [push, pull_request, workflow_dispatch]
 env:
   FORCE_COLOR: 1
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -33,3 +36,19 @@ jobs:
           uv run github-tools/potential_closeable_prs.py --dry-run --json
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
+      - name: Prepare files
+        run: |
+          mkdir -p build
+          mv github-tools/potential_closeable_prs.json build/
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
+      - name: Deploy 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          clean: true
+          git-config-name: github-actions[bot]
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
