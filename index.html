@@ -16,6 +16,7 @@
     <table id="data-table">
       <thead>
         <tr>
+          <th>Count</th>
           <th>No.</th>
           <th>Issue</th>
           <th>Created</th>
@@ -31,8 +32,9 @@
         .then((response) => response.json())
         .then((data) => {
           const tableBody = document.querySelector("#data-table tbody");
-          data.candidates.forEach((candidate) => {
+          data.candidates.forEach((candidate, index) => {
             const row = document.createElement("tr");
+            const countCell = document.createElement("td");
             const prNumberCell = document.createElement("td");
             const titleCell = document.createElement("td");
             const createdCell = document.createElement("td");
@@ -41,8 +43,10 @@
             const prNumberLink = document.createElement("a");
             const titleLink = document.createElement("a");
 
+            countCell.textContent = index + 1;
+
             prNumberLink.href = candidate.html_url;
-            prNumberLink.textContent = candidate.number;
+            prNumberLink.textContent = `#${candidate.number}`;
             prNumberCell.appendChild(prNumberLink);
 
             titleLink.href = candidate.html_url;
@@ -54,8 +58,15 @@
             createdCell.classList.add("created");
             updatedCell.classList.add("updated");
 
-            authorCell.textContent = candidate.user.login;
+            if (candidate.user.type === "Mannequin") {
+              const urlParts = candidate.user.html_url.split("/");
+              const username = urlParts[urlParts.length - 1];
+              authorCell.textContent = username;
+            } else {
+              authorCell.textContent = candidate.user.login;
+            }
 
+            row.appendChild(countCell);
             row.appendChild(prNumberCell);
             row.appendChild(titleCell);
             row.appendChild(createdCell);
