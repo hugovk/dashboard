@@ -19,6 +19,7 @@
           <th>Count</th>
           <th>No.</th>
           <th>Issue</th>
+          <th>Linked PRs</th>
           <th>Created</th>
           <th>Updated</th>
           <th>Author</th>
@@ -26,7 +27,6 @@
       </thead>
       <tbody></tbody>
     </table>
-
     <script>
       fetch("potential_closeable_issues.json")
         .then((response) => response.json())
@@ -37,6 +37,7 @@
             const countCell = document.createElement("td");
             const prNumberCell = document.createElement("td");
             const titleCell = document.createElement("td");
+            const linkedPrsCell = document.createElement("td");
             const createdCell = document.createElement("td");
             const updatedCell = document.createElement("td");
             const authorCell = document.createElement("td");
@@ -66,9 +67,23 @@
               authorCell.textContent = candidate.user.login;
             }
 
+            (candidate.linked_prs || []).forEach((pr) => {
+              const prLink = document.createElement("a");
+              prLink.href = pr.html_url;
+
+              const img = document.createElement("img");
+              img.src = pr.merged ? "pr-merged.svg" : "pr-closed.svg";
+              img.alt = pr.merged ? "Merged" : "Closed";
+              img.classList.add(pr.merged ? "merged" : "closed");
+
+              prLink.appendChild(img);
+              linkedPrsCell.appendChild(prLink);
+            });
+
             row.appendChild(countCell);
             row.appendChild(prNumberCell);
             row.appendChild(titleCell);
+            row.appendChild(linkedPrsCell);
             row.appendChild(createdCell);
             row.appendChild(updatedCell);
             row.appendChild(authorCell);

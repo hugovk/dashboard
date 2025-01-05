@@ -111,3 +111,12 @@ td.updated {
     position: absolute;
   }
 }
+img.closed {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(-10deg);
+}
+img.merged {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(270deg);
+}
+img {
+  width: 16px;
+}
