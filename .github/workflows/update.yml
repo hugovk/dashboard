@@ -36,9 +36,17 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
 
+      - name: Check less for testing
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        run: echo "NUMBER_TO_CHECK=20" >> "$GITHUB_ENV"
+
+      - name: Check more for deploying
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: echo "NUMBER_TO_CHECK=10000" >> "$GITHUB_ENV"
+
       - name: Find potential closeable backports
         run: |
-          uv run github-tools/potential_closeable_issues.py --dry-run --json -n 10000
+          uv run github-tools/potential_closeable_issues.py --dry-run --json -n "$NUMBER_TO_CHECK"
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
