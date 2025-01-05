@@ -13,7 +13,7 @@
       These open CPython issues have their linked PRs merged. They're candidates for
       closing.
     </p>
-    <table id="data-table">
+    <table class="sortable" id="data-table">
       <thead>
         <tr>
           <th>Count</th>
@@ -68,6 +68,9 @@
             authorLink.textContent = authorName;
             authorCell.appendChild(authorLink);
 
+            const prCount = (candidate.linked_prs || []).length;
+            linkedPrsCell.setAttribute("data-sort", prCount);
+
             (candidate.linked_prs || []).forEach((pr) => {
               const prLink = document.createElement("a");
               prLink.href = pr.html_url;
@@ -103,4 +106,9 @@
         .catch((error) => console.error("Error loading JSON:", error));
     </script>
   </body>
+  <link
+    href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable-base.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
 </html>
