@@ -61,7 +61,10 @@ jobs:
       - name: Deploy 🚀
         if: |
           github.repository_owner == 'hugovk'
-          && github.event_name != 'pull_request'
+          && (
+            github.event_name == 'schedule'
+            || github.event_name == 'workflow_dispatch'
+          )
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
