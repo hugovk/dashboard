@@ -1,7 +1,7 @@
 :root {
   --bg-color: #eee;
   --text-color: #444;
-  --link-color: #090;
+  --link-color: #337099;
   --link-hover-color: white;
 }
 @media (prefers-color-scheme: light) {
