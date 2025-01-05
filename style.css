@@ -4,12 +4,26 @@
   --link-color: #090;
   --link-hover-color: white;
 }
+@media (prefers-color-scheme: light) {
+  img.closed {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(-30deg) brightness(0.8);
+  }
+  img.merged {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(250deg) brightness(0.8);
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: black;
     --text-color: #ccc;
     --link-color: #5bf;
     --link-hover-color: black;
+  }
+  img.closed {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(-10deg);
+  }
+  img.merged {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(270deg);
   }
 }
 body {
@@ -110,12 +124,6 @@ td.updated {
     left: 10px;
     position: absolute;
   }
-}
-img.closed {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(-10deg);
-}
-img.merged {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(270deg);
 }
 img {
   width: 16px;
