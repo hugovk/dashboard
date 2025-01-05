@@ -59,13 +59,14 @@
             createdCell.classList.add("created");
             updatedCell.classList.add("updated");
 
-            if (candidate.user.type === "Mannequin") {
-              const urlParts = candidate.user.html_url.split("/");
-              const username = urlParts[urlParts.length - 1];
-              authorCell.textContent = username;
-            } else {
-              authorCell.textContent = candidate.user.login;
-            }
+            const authorLink = document.createElement("a");
+            const authorName =
+              candidate.user.type === "Mannequin"
+                ? candidate.user.html_url.split("/").pop()
+                : candidate.user.login;
+            authorLink.href = `https://github.com/python/cpython/issues/${authorName}`;
+            authorLink.textContent = authorName;
+            authorCell.appendChild(authorLink);
 
             (candidate.linked_prs || []).forEach((pr) => {
               const prLink = document.createElement("a");
