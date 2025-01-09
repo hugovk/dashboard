@@ -27,6 +27,7 @@
       </thead>
       <tbody></tbody>
     </table>
+    <div id="loading">Loading...</div>
     <script>
       fetch("potential_closeable_issues.json")
         .then((response) => response.json())
@@ -102,6 +103,8 @@
           const lastUpdateParagraph = document.createElement("p");
           lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}. (Updated daily.)`;
           document.body.appendChild(lastUpdateParagraph);
+
+          document.getElementById("loading").style.display = "none";
         })
         .catch((error) => console.error("Error loading JSON:", error));
     </script>
