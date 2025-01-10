@@ -8,12 +8,31 @@
   </head>
   <body>
     <h1>Dashboard</h1>
+    <h2>Orphaned backports</h2>
+    <p>
+      Find closed CPython issues with open backport PRs. The backports may have been
+      forgotten and are candidates for merging or closing.
+    </p>
+    <table class="sortable" id="orphaned-backports">
+      <thead>
+        <tr>
+          <th>Count</th>
+          <th>No.</th>
+          <th>Backport PR</th>
+          <th>Created</th>
+          <th>Updated</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="loading-orphaned-backports">Loading...</div>
     <h2>Potentially closeable issues</h2>
     <p>
       These open CPython issues have their linked PRs merged. They're candidates for
       closing.
     </p>
-    <table class="sortable" id="data-table">
+    <table class="sortable" id="potential-closeable-issues">
       <thead>
         <tr>
           <th>Count</th>
@@ -27,7 +46,8 @@
       </thead>
       <tbody></tbody>
     </table>
-    <div id="loading">Loading...</div>
+    <div id="loading-potential-closeable-issues">Loading...</div>
+    <script src="orphaned_backports.js"></script>
     <script src="potential_closeable_issues.js"></script>
     <a
       href="https://github.com/hugovk/dashboard"

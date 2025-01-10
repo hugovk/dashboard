@@ -44,7 +44,13 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: echo "NUMBER_TO_CHECK=10000" >> "$GITHUB_ENV"
 
-      - name: Find potential closeable backports
+      - name: Find orphaned backports
+        run: |
+          uv run github-tools/orphaned_backports.py --dry-run --json -n "$NUMBER_TO_CHECK"
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
+      - name: Find potential closeable issues
         run: |
           uv run github-tools/potential_closeable_issues.py --dry-run --json -n "$NUMBER_TO_CHECK"
         env:
@@ -53,7 +59,8 @@ jobs:
       - name: Prepare files
         run: |
           mkdir -p build
-          cp index.html style.css ./*.svg build/
+          cp index.html style.css ./*.js ./*.svg build/
+          mv github-tools/orphaned_backports.json build/
           mv github-tools/potential_closeable_issues.json build/
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}

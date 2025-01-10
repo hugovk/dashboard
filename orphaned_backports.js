@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("potential_closeable_issues.json")
+  fetch("orphaned_backports.json")
     .then((response) => response.json())
     .then((data) => {
-      const tableBody = document.querySelector("#potential-closeable-issues tbody");
+      const tableBody = document.querySelector("#orphaned-backports tbody");
       if (!tableBody) {
         console.error("Table body not found");
         return;
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const countCell = document.createElement("td");
         const prNumberCell = document.createElement("td");
         const titleCell = document.createElement("td");
-        const linkedPrsCell = document.createElement("td");
         const createdCell = document.createElement("td");
         const updatedCell = document.createElement("td");
         const authorCell = document.createElement("td");
@@ -43,26 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         authorLink.textContent = authorName;
         authorCell.appendChild(authorLink);
 
-        const prCount = (candidate.linked_prs || []).length;
-        linkedPrsCell.setAttribute("data-sort", prCount);
-
-        (candidate.linked_prs || []).forEach((pr) => {
-          const prLink = document.createElement("a");
-          prLink.href = pr.html_url;
-
-          const img = document.createElement("img");
-          img.src = pr.merged ? "pr-merged.svg" : "pr-closed.svg";
-          img.alt = pr.merged ? "Merged" : "Closed";
-          img.classList.add(pr.merged ? "merged" : "closed");
-
-          prLink.appendChild(img);
-          linkedPrsCell.appendChild(prLink);
-        });
-
         row.appendChild(countCell);
         row.appendChild(prNumberCell);
         row.appendChild(titleCell);
-        row.appendChild(linkedPrsCell);
         row.appendChild(createdCell);
         row.appendChild(updatedCell);
         row.appendChild(authorCell);
@@ -76,10 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .replace("T", " ");
       const lastUpdateParagraph = document.createElement("p");
       lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}. (Updated daily.)`;
-      document.querySelector("#potential-closeable-issues").after(lastUpdateParagraph);
+      document.querySelector("#orphaned-backports").after(lastUpdateParagraph);
 
-      document.getElementById("loading-potential-closeable-issues").style.display =
-        "none";
+      document.getElementById("loading-orphaned-backports").style.display = "none";
     })
     .catch((error) => console.error("Error loading JSON:", error));
 });
