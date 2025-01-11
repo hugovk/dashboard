@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("orphaned_backports.json")
     .then((response) => response.json())
     .then((data) => {
-      const tableBody = document.querySelector("#orphaned-backports tbody");
+      const tableBody = document.querySelector("#table-orphaned-backports tbody");
       if (!tableBody) {
         console.error("Table body not found");
         return;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .replace("T", " ");
       const lastUpdateParagraph = document.createElement("p");
       lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}. (Updated daily.)`;
-      document.querySelector("#orphaned-backports").after(lastUpdateParagraph);
+      document.querySelector("#table-orphaned-backports").after(lastUpdateParagraph);
 
       document.getElementById("loading-orphaned-backports").style.display = "none";
     })
