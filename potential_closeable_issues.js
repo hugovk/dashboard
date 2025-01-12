@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("potential_closeable_issues.json")
     .then((response) => response.json())
     .then((data) => {
-      const tableBody = document.querySelector("#potential-closeable-issues tbody");
+      const tableBody = document.querySelector(
+        "#table-potential-closeable-issues tbody",
+      );
       if (!tableBody) {
         console.error("Table body not found");
         return;
@@ -76,7 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .replace("T", " ");
       const lastUpdateParagraph = document.createElement("p");
       lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}. (Updated daily.)`;
-      document.querySelector("#potential-closeable-issues").after(lastUpdateParagraph);
+      document
+        .querySelector("#table-potential-closeable-issues")
+        .after(lastUpdateParagraph);
 
       document.getElementById("loading-potential-closeable-issues").style.display =
         "none";

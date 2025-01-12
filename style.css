@@ -37,6 +37,33 @@ h2,
 h3 {
   line-height: 1.2;
 }
+h2 {
+  position: relative;
+  cursor: pointer;
+}
+h2:hover .anchor-link {
+  display: inline;
+}
+.anchor-link {
+  display: none;
+  position: absolute;
+  left: -20px;
+  text-decoration: none;
+}
+
+#table-of-contents {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+#table-of-contents li {
+  padding-left: 5px;
+}
+#table-of-contents li:not(:last-child)::after {
+  content: " | ";
+}
+
 canvas,
 body {
   background-color: var(--bg-color);
@@ -127,4 +154,30 @@ td.updated {
 }
 img {
   width: 16px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
