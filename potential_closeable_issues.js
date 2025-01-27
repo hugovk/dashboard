@@ -2,14 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("potential_closeable_issues.json")
     .then((response) => response.json())
     .then((data) => {
-      const tableBody = document.querySelector(
+      const tableBodyWithMerged = document.querySelector(
         "#table-potential-closeable-issues tbody",
       );
-      if (!tableBody) {
+      const tableBodyWithoutMerged = document.querySelector(
+        "#table-no-merged-issues tbody",
+      );
+
+      if (!tableBodyWithMerged || !tableBodyWithoutMerged) {
         console.error("Table body not found");
         return;
       }
-      data.candidates.forEach((candidate, index) => {
+
+      let countWithMerged = 0;
+      let countWithoutMerged = 0;
+      data.candidates.forEach((candidate) => {
+        const mergedPrs = (candidate.linked_prs || []).filter((pr) => pr.merged);
+
         const row = document.createElement("tr");
         const countCell = document.createElement("td");
         const prNumberCell = document.createElement("td");
@@ -21,7 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const prNumberLink = document.createElement("a");
         const titleLink = document.createElement("a");
 
-        countCell.textContent = index + 1;
+        if (mergedPrs.length === 0) {
+          countWithoutMerged += 1;
+          countCell.textContent = countWithoutMerged;
+        } else {
+          countWithMerged += 1;
+          countCell.textContent = countWithMerged;
+        }
 
         prNumberLink.href = candidate.html_url;
         prNumberLink.textContent = `#${candidate.number}`;
@@ -68,7 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
         row.appendChild(createdCell);
         row.appendChild(updatedCell);
         row.appendChild(authorCell);
-        tableBody.appendChild(row);
+
+        if (mergedPrs.length === 0) {
+          tableBodyWithoutMerged.appendChild(row);
+        } else {
+          tableBodyWithMerged.appendChild(row);
+        }
       });
 
       const lastUpdate = new Date(data.last_update);
@@ -78,10 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .replace("T", " ");
       const lastUpdateParagraph = document.createElement("p");
       lastUpdateParagraph.textContent = `Last updated ${formattedLastUpdate}. (Updated daily.)`;
+      document.querySelector("#table-no-merged-issues").after(lastUpdateParagraph);
       document
         .querySelector("#table-potential-closeable-issues")
-        .after(lastUpdateParagraph);
+        .after(lastUpdateParagraph.cloneNode(true));
 
+      document.getElementById("loading-no-merged-issues").style.display = "none";
       document.getElementById("loading-potential-closeable-issues").style.display =
         "none";
     })

@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>Triage dashboard</h1>
+
     <h2>Orphaned backports</h2>
     <p>
       The parent issue for these backports has been closed, but the backport PRs are
@@ -28,11 +29,9 @@
       <tbody></tbody>
     </table>
     <div id="loading-orphaned-backports">Loading...</div>
-    <h2>Potentially closeable issues</h2>
-    <p>
-      These open CPython issues have their linked PRs merged. They're candidates for
-      closing.
-    </p>
+
+    <h2>Issues with merged PRs</h2>
+    <p>These open CPython issues have merged PRs. They're candidates for closing.</p>
     <table class="sortable" id="table-potential-closeable-issues">
       <thead>
         <tr>
@@ -48,6 +47,27 @@
       <tbody></tbody>
     </table>
     <div id="loading-potential-closeable-issues">Loading...</div>
+
+    <h2>Issues with closed PRs</h2>
+    <p>
+      These open CPython issues only have closed PRs. They're candidates for closing.
+    </p>
+    <table class="sortable" id="table-no-merged-issues">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Issue Number</th>
+          <th>Title</th>
+          <th>Linked PRs</th>
+          <th>Created</th>
+          <th>Updated</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="loading-no-merged-issues">Loading...</div>
+
     <script src="orphaned_backports.js"></script>
     <script src="potential_closeable_issues.js"></script>
     <script>
