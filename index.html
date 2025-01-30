@@ -10,6 +10,28 @@
   <body>
     <h1>Triage dashboard</h1>
 
+    <div id="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li>
+          <a href="#orphaned-backports"
+            >Orphaned backports <span id="count-orphaned-backports">...</span></a
+          >
+        </li>
+        <li>
+          <a href="#issues-with-merged-prs"
+            >Issues with merged PRs
+            <span id="count-potential-closeable-issues">...</span></a
+          >
+        </li>
+        <li>
+          <a href="#issues-with-closed-prs"
+            >Issues with closed PRs <span id="count-no-merged-issues">...</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
     <h2>Orphaned backports</h2>
     <p>
       The parent issue for these backports has been closed, but the backport PRs are

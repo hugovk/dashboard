@@ -105,11 +105,34 @@ a {
   text-decoration: none;
 }
 a:hover,
-a:hover div {
+a:hover div,
+a:hover span {
   color: var(--link-hover-color);
   background-color: var(--link-color);
   outline: 0.05em solid var(--link-color);
 }
+
+#summary ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+#summary li {
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#summary li span {
+  display: block;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Table body not found");
         return;
       }
+      document.getElementById("count-orphaned-backports").textContent =
+        data.candidates.length;
       data.candidates.forEach((candidate, index) => {
         const row = document.createElement("tr");
         const countCell = document.createElement("td");
