@@ -1,5 +1,5 @@
 {
-  "last_update": "2025-02-14T20:35:51.686986+00:00",
+  "last_update": "2025-02-14T21:23:40.167977+00:00",
   "candidates": [
     {
       "url": "https://api.github.com/repos/python/cpython/pulls/130121",
@@ -317,8 +317,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -338,7 +338,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -352,7 +352,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
@@ -708,8 +708,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -729,7 +729,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -743,7 +743,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
@@ -1154,8 +1154,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -1175,7 +1175,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -1189,7 +1189,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
@@ -1558,8 +1558,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -1579,7 +1579,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -1593,7 +1593,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
@@ -1958,8 +1958,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -1979,7 +1979,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -1993,7 +1993,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
@@ -2315,8 +2315,8 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2025-02-14T18:57:02Z",
-          "pushed_at": "2025-02-14T18:47:54Z",
+          "updated_at": "2025-02-14T21:22:06Z",
+          "pushed_at": "2025-02-14T21:21:47Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
@@ -2336,7 +2336,7 @@
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9058,
+          "open_issues_count": 9056,
           "license": {
             "key": "other",
             "name": "Other",
@@ -2350,7 +2350,7 @@
           "topics": [],
           "visibility": "public",
           "forks": 31099,
-          "open_issues": 9058,
+          "open_issues": 9056,
           "watchers": 65271,
           "default_branch": "main"
         }
