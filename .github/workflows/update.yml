@@ -75,6 +75,8 @@ jobs:
         run: |
           mkdir -p build
           cp index.html style.css ./*.js ./*.svg build/
+          ls github-tools/
+          mv github-tools/needs_backport.json build/
           mv github-tools/orphaned_backports.json build/
           mv github-tools/potential_closeable_issues.json build/
         env:
