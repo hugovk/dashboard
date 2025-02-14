@@ -29,6 +29,22 @@
             >Issues with closed PRs <span id="count-no-merged-issues">...</span></a
           >
         </li>
+        <li>
+          <a href="#prs-missing-backports"
+            >PRs missing backports <span id="count-prs-missing-backports">...</span></a
+          >
+        </li>
+        <li>
+          <a href="#prs-with-backports"
+            >PRs with backports <span id="count-prs-with-backports">...</span></a
+          >
+        </li>
+        <li>
+          <a href="#issues-with-backport-labels"
+            >Issues with backport labels
+            <span id="count-issues-with-backport-labels">...</span></a
+          >
+        </li>
       </ul>
     </div>
 
@@ -78,9 +94,9 @@
     <table class="sortable" id="table-no-merged-issues">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Issue Number</th>
-          <th>Title</th>
+          <th>Count</th>
+          <th>No.</th>
+          <th>Issue</th>
           <th>Linked PRs</th>
           <th>Created</th>
           <th>Updated</th>
@@ -91,42 +107,75 @@
     </table>
     <div id="loading-no-merged-issues">Loading...</div>
 
+    <div id="tables-container">
+      <h2>PRs missing backports</h2>
+      <p>
+        These PRs have a "needs backport to 3.x" label but no backport PR. Create a
+        manual backport if there was a conflict, or remove the label if the backport is
+        no longer needed.
+      </p>
+      <table class="sortable" id="table-prs-missing-backports">
+        <thead>
+          <tr>
+            <th>Count</th>
+            <th>No.</th>
+            <th>Backport PR</th>
+            <th>Needs backport to</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div id="loading-needs-backport">Loading...</div>
+
+      <h2>PRs with backports</h2>
+      <p>
+        These PRs have a "needs backport to 3.x" label and the backport has been made.
+        Remove the label if the backport is indeed no longer needed.
+      </p>
+      <table class="sortable" id="table-prs-with-backports">
+        <thead>
+          <tr>
+            <th>Count</th>
+            <th>No.</th>
+            <th>Backport PR</th>
+            <th>Needs backport to</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Issues with backport labels</h2>
+      <p>
+        Backport labels belong on PRs, not issues. Remove the label from the issue and
+        check if a backport was made.
+      </p>
+      <table class="sortable" id="table-issues-with-backport-labels">
+        <thead>
+          <tr>
+            <th>Count</th>
+            <th>No.</th>
+            <th>Issue</th>
+            <th>Needs backport to</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
     <script src="orphaned_backports.js"></script>
     <script src="potential_closeable_issues.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const toc = document.createElement("ul");
-        toc.id = "table-of-contents";
-
-        document.querySelectorAll("h2").forEach((h2) => {
-          const slug = h2.textContent
-            .toLowerCase()
-            .replace(/\s+/g, "-")
-            .replace(/[^\w-]+/g, "");
-          h2.id = slug;
-
-          const anchor = document.createElement("a");
-          anchor.href = `#${slug}`;
-          anchor.className = "anchor-link";
-          anchor.textContent = "#";
-          h2.appendChild(anchor);
-
-          h2.addEventListener("click", () => {
-            window.location.hash = slug;
-          });
-
-          const tocItem = document.createElement("li");
-          const tocLink = document.createElement("a");
-          tocLink.href = `#${slug}`;
-          tocLink.textContent = h2.textContent.replace(/#$/, "");
-          tocItem.appendChild(tocLink);
-          toc.appendChild(tocItem);
-        });
-
-        const h1 = document.querySelector("h1");
-        h1.after(toc);
-      });
-    </script>
+    <script src="needs_backport.js"></script>
+    <script src="create_toc.js"></script>
     <a
       href="https://github.com/hugovk/dashboard"
       class="github-corner"
