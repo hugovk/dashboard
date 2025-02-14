@@ -91,6 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      document.getElementById("count-no-merged-issues").textContent =
+        countWithoutMerged;
+      document.getElementById("count-potential-closeable-issues").textContent =
+        countWithMerged;
+
       const lastUpdate = new Date(data.last_update);
       const formattedLastUpdate = lastUpdate
         .toISOString()
