@@ -1,5 +1,5 @@
 {
-  "last_update": "2025-02-16T03:01:00.445123+00:00",
+  "last_update": "2025-02-17T03:00:05.957821+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -296,7 +296,7 @@
           "milestone": null,
           "comments": 5,
           "created_at": "2025-02-14T15:21:48Z",
-          "updated_at": "2025-02-16T01:36:04Z",
+          "updated_at": "2025-02-16T03:49:23Z",
           "closed_at": "2025-02-16T01:33:14Z",
           "author_association": "MEMBER",
           "sub_issues_summary": {
@@ -40660,6 +40660,129 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/130015/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null
+        },
+        {
+          "url": "https://api.github.com/repos/python/cpython/issues/127540",
+          "repository_url": "https://api.github.com/repos/python/cpython",
+          "labels_url": "https://api.github.com/repos/python/cpython/issues/127540/labels{/name}",
+          "comments_url": "https://api.github.com/repos/python/cpython/issues/127540/comments",
+          "events_url": "https://api.github.com/repos/python/cpython/issues/127540/events",
+          "html_url": "https://github.com/python/cpython/pull/127540",
+          "id": 2713493899,
+          "node_id": "PR_kwDOBN0Z8c6Dz57R",
+          "number": 127540,
+          "title": "gh-127488: Add tests for `Tools/i18n/msgfmt.py`",
+          "user": {
+            "login": "tomasr8",
+            "id": 8739637,
+            "node_id": "MDQ6VXNlcjg3Mzk2Mzc=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8739637?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/tomasr8",
+            "html_url": "https://github.com/tomasr8",
+            "followers_url": "https://api.github.com/users/tomasr8/followers",
+            "following_url": "https://api.github.com/users/tomasr8/following{/other_user}",
+            "gists_url": "https://api.github.com/users/tomasr8/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/tomasr8/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/tomasr8/subscriptions",
+            "organizations_url": "https://api.github.com/users/tomasr8/orgs",
+            "repos_url": "https://api.github.com/users/tomasr8/repos",
+            "events_url": "https://api.github.com/users/tomasr8/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/tomasr8/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [
+            {
+              "id": 667924166,
+              "node_id": "MDU6TGFiZWw2Njc5MjQxNjY=",
+              "url": "https://api.github.com/repos/python/cpython/labels/skip%20news",
+              "name": "skip news",
+              "color": "000000",
+              "default": false,
+              "description": null
+            },
+            {
+              "id": 5533425416,
+              "node_id": "LA_kwDOBN0Z8c8AAAABSdFfCA",
+              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.12",
+              "name": "needs backport to 3.12",
+              "color": "c2e0c6",
+              "default": false,
+              "description": "bug and security fixes"
+            },
+            {
+              "id": 6924885615,
+              "node_id": "LA_kwDOBN0Z8c8AAAABnMFebw",
+              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.13",
+              "name": "needs backport to 3.13",
+              "color": "c2e0c6",
+              "default": false,
+              "description": "bugs and security fixes"
+            }
+          ],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 8,
+          "created_at": "2024-12-02T22:04:16Z",
+          "updated_at": "2025-02-16T12:06:46Z",
+          "closed_at": "2025-02-16T12:05:01Z",
+          "author_association": "MEMBER",
+          "sub_issues_summary": {
+            "total": 0,
+            "completed": 0,
+            "percent_completed": 0
+          },
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/python/cpython/pulls/127540",
+            "html_url": "https://github.com/python/cpython/pull/127540",
+            "diff_url": "https://github.com/python/cpython/pull/127540.diff",
+            "patch_url": "https://github.com/python/cpython/pull/127540.patch",
+            "merged_at": "2025-02-16T12:05:01Z"
+          },
+          "body": "Adds tests for both the compilation itself and the CLI.\r\n\r\nOne thing I'm not so sure is about is keeping the binary MO file checked in git.\r\nThey are not compared byte by byte, instead I compare the parsed catalog files.\r\nThe catalogs could be saved in a human-readable format like JSON for example.\r\n\r\ncc @srinivasreddy\n\n<!-- gh-issue-number: gh-127488 -->\n* Issue: gh-127488\n<!-- /gh-issue-number -->\n",
+          "closed_by": {
+            "login": "serhiy-storchaka",
+            "id": 3659035,
+            "node_id": "MDQ6VXNlcjM2NTkwMzU=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/serhiy-storchaka",
+            "html_url": "https://github.com/serhiy-storchaka",
+            "followers_url": "https://api.github.com/users/serhiy-storchaka/followers",
+            "following_url": "https://api.github.com/users/serhiy-storchaka/following{/other_user}",
+            "gists_url": "https://api.github.com/users/serhiy-storchaka/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/serhiy-storchaka/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/serhiy-storchaka/subscriptions",
+            "organizations_url": "https://api.github.com/users/serhiy-storchaka/orgs",
+            "repos_url": "https://api.github.com/users/serhiy-storchaka/repos",
+            "events_url": "https://api.github.com/users/serhiy-storchaka/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/serhiy-storchaka/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "reactions": {
+            "url": "https://api.github.com/repos/python/cpython/issues/127540/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/python/cpython/issues/127540/timeline",
           "performed_via_github_app": null,
           "state_reason": null
         },
