@@ -41,6 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
               .join(", ");
             backportCell.textContent = backportLabels;
 
+            if (backportLabels) {
+              const firstLabel = backportLabels.split(", ")[0].replace(/\./g, "");
+              backportCell.setAttribute("data-sort", firstLabel);
+            }
+
             createdCell.textContent = candidate.created_at.split("T")[0];
             updatedCell.textContent = candidate.updated_at.split("T")[0];
             createdCell.classList.add("created");
