@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       Object.keys(reasons).forEach((reasonKey) => {
         const tableBody = document.querySelector(`#${reasons[reasonKey]} tbody`);
         const reasonData = data.reasons.find((reason) => reason[reasonKey]);
+        const countId = reasons[reasonKey].replace("table-", "count-");
 
         if (reasonData && reasonData[reasonKey].length > 0) {
           reasonData[reasonKey].forEach((candidate, index) => {
@@ -70,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
             tableBody.appendChild(row);
           });
 
-          const countId = reasons[reasonKey].replace("table-", "count-");
           document.getElementById(countId).textContent = reasonData[reasonKey].length;
         } else {
+          document.getElementById(countId).textContent = "0";
           const noDataMessage = document.createElement("p");
           noDataMessage.textContent = "(none found)";
           tableBody.parentElement.replaceWith(noDataMessage);
