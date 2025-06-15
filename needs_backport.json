@@ -1,5 +1,5 @@
 {
-  "last_update": "2025-06-14T03:13:38.335989+00:00",
+  "last_update": "2025-06-15T03:25:59.722124+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -406,9 +406,9 @@
             }
           ],
           "milestone": null,
-          "comments": 3,
+          "comments": 5,
           "created_at": "2025-05-23T02:19:23Z",
-          "updated_at": "2025-05-27T16:02:28Z",
+          "updated_at": "2025-06-15T02:37:32Z",
           "closed_at": "2025-05-27T16:02:17Z",
           "author_association": "MEMBER",
           "type": null,
