@@ -1,5 +1,5 @@
 {
-  "last_update": "2025-06-16T03:23:31.017672+00:00",
+  "last_update": "2025-06-17T03:19:18.823549+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -348,15 +348,6 @@
               "color": "c2e0c6",
               "default": false,
               "description": "bugs and security fixes"
-            },
-            {
-              "id": 8574425320,
-              "node_id": "LA_kwDOBN0Z8c8AAAAB_xNY6A",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.14",
-              "name": "needs backport to 3.14",
-              "color": "c2e0c6",
-              "default": false,
-              "description": "bugs and security fixes"
             }
           ],
           "state": "closed",
@@ -406,9 +397,9 @@
             }
           ],
           "milestone": null,
-          "comments": 5,
+          "comments": 7,
           "created_at": "2025-05-23T02:19:23Z",
-          "updated_at": "2025-06-15T02:37:32Z",
+          "updated_at": "2025-06-17T00:43:02Z",
           "closed_at": "2025-05-27T16:02:17Z",
           "author_association": "MEMBER",
           "type": null,
