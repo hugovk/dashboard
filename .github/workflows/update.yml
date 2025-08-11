@@ -18,19 +18,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
       - name: Check out github-tools
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: hugovk/github-tools
           path: github-tools
           persist-credentials: false
 
       - name: Check out CPython
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: python/cpython
           path: cpython
