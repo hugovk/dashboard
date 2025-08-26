@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("issues_by_dev.json")
+  fetch("../issues_by_dev.json")
     .then((response) => response.json())
     .then((data) => {
       const table = document.querySelector("#table-team");

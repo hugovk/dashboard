@@ -79,9 +79,10 @@ jobs:
 
       - name: Prepare files
         run: |
-          mkdir -p build
+          mkdir -p build/team/
           cp style.css ./*.html ./*.js ./*.svg build/
           ls github-tools/
+          mv team/* build/team/
           mv github-tools/issues_by_dev.json build/
           mv github-tools/needs_backport.json build/
           mv github-tools/orphaned_backports.json build/
