@@ -53,6 +53,12 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: echo "NUMBER_TO_CHECK=10000" >> "$GITHUB_ENV"
 
+      - name: Find open issues/PRs per team member
+        run: |
+          uv run github-tools/issues_by_dev.py --json -n "$NUMBER_TO_CHECK"
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
       - name: Find orphaned backports
         run: |
           uv run github-tools/orphaned_backports.py --dry-run --json -n "$NUMBER_TO_CHECK"
@@ -74,8 +80,9 @@ jobs:
       - name: Prepare files
         run: |
           mkdir -p build
-          cp index.html style.css ./*.js ./*.svg build/
+          cp style.css ./*.html ./*.js ./*.svg build/
           ls github-tools/
+          mv github-tools/issues_by_dev.json build/
           mv github-tools/needs_backport.json build/
           mv github-tools/orphaned_backports.json build/
           mv github-tools/potential_closeable_issues.json build/
@@ -95,3 +102,8 @@ jobs:
           clean: true
           git-config-name: github-actions[bot]
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dashboard
+          path: build/
