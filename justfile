@@ -1,3 +1,6 @@
+default:
+    just --list
+
 # Fetch JSON data files for local testing
 fetch:
     curl -O https://raw.githubusercontent.com/hugovk/dashboard/refs/heads/gh-pages/issues_by_dev.json
