@@ -135,12 +135,29 @@ a:hover span {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 th,
 td {
   border: 1px solid #ddd;
+  border-left: none;
+  border-top: none;
   padding: 8px;
+}
+th:first-child,
+td:first-child {
+  border-left: 1px solid #ddd;
+}
+tr:first-child th {
+  border-top: 1px solid #ddd;
+}
+th {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 td {
   text-align: center;
