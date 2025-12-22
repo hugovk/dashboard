@@ -1,5 +1,5 @@
 {
-  "last_update": "2025-12-21T03:42:26.108237+00:00",
+  "last_update": "2025-12-22T03:46:24.314833+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -101,14 +101,14 @@
               "site_admin": false
             }
           ],
-          "milestone": null,
+          "milestone": {},
           "comments": 13,
           "created_at": "2025-10-24T13:58:14Z",
           "updated_at": "2025-11-07T00:40:37Z",
           "closed_at": "2025-11-05T21:20:40Z",
           "author_association": "CONTRIBUTOR",
-          "type": null,
-          "active_lock_reason": null,
+          "type": {},
+          "active_lock_reason": {},
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/140549",
@@ -152,8 +152,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/140549/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null
+          "performed_via_github_app": {},
+          "state_reason": {}
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/136401",
@@ -271,14 +271,14 @@
               "site_admin": false
             }
           ],
-          "milestone": null,
+          "milestone": {},
           "comments": 12,
           "created_at": "2025-07-08T00:33:15Z",
           "updated_at": "2025-11-26T21:45:02Z",
           "closed_at": "2025-07-08T19:19:58Z",
           "author_association": "MEMBER",
-          "type": null,
-          "active_lock_reason": null,
+          "type": {},
+          "active_lock_reason": {},
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/136401",
@@ -322,8 +322,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/136401/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null
+          "performed_via_github_app": {},
+          "state_reason": {}
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/130562",
@@ -365,7 +365,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": null
+              "description": {}
             },
             {
               "id": 6924885615,
@@ -423,14 +423,14 @@
               "site_admin": false
             }
           ],
-          "milestone": null,
+          "milestone": {},
           "comments": 12,
           "created_at": "2025-02-26T01:05:34Z",
           "updated_at": "2025-11-23T10:10:43Z",
           "closed_at": "2025-02-26T18:41:27Z",
           "author_association": "MEMBER",
-          "type": null,
-          "active_lock_reason": null,
+          "type": {},
+          "active_lock_reason": {},
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/130562",
@@ -474,8 +474,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/130562/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null
+          "performed_via_github_app": {},
+          "state_reason": {}
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/130053",
@@ -526,7 +526,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": null
+              "description": {}
             },
             {
               "id": 6924885615,
@@ -584,14 +584,14 @@
               "site_admin": false
             }
           ],
-          "milestone": null,
+          "milestone": {},
           "comments": 14,
           "created_at": "2025-02-12T20:35:08Z",
           "updated_at": "2025-08-14T18:07:16Z",
           "closed_at": "2025-02-20T17:05:39Z",
           "author_association": "MEMBER",
-          "type": null,
-          "active_lock_reason": null,
+          "type": {},
+          "active_lock_reason": {},
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/130053",
@@ -635,8 +635,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/130053/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null
+          "performed_via_github_app": {},
+          "state_reason": {}
         }
       ]
     }
