@@ -171,4 +171,7 @@ cython_debug/
 .pypirc
 
 github-tools
-*.json
+issues_by_dev.json
+needs_backport.json
+orphaned_backports.json
+potential_closeable_issues.json
