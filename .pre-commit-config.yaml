@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -12,23 +12,23 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.30.0
+    rev: 0.36.0
     hooks:
       - id: check-github-workflows
       - id: check-renovate
 
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.5
+    rev: v1.7.10
     hooks:
       - id: actionlint
 
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.0.0
+    rev: v1.19.0
     hooks:
       - id: zizmor
 
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.4.2
+    rev: v3.7.4
     hooks:
       - id: prettier
         args: [--prose-wrap=always, --print-width=88]
