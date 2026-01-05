@@ -7,15 +7,17 @@ on:
     - cron: "0 2 * * *"
   workflow_dispatch:
 
+permissions: {}
+
 env:
   FORCE_COLOR: 1
-
-permissions:
-  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v6
