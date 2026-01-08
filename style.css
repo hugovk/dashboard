@@ -29,7 +29,8 @@
 body {
   margin-top: 15px;
 }
-h1 {
+h1,
+nav {
   text-align: center;
 }
 h1,

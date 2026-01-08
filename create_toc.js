@@ -27,6 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     toc.appendChild(tocItem);
   });
 
-  const h1 = document.querySelector("h1");
-  h1.after(toc);
+  const nav = document.querySelector("nav");
+  nav.after(toc);
 });
