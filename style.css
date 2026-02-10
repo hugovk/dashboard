@@ -3,6 +3,7 @@
   --text-color: #444;
   --link-color: #337099;
   --link-hover-color: white;
+  --border-color: #aaa;
 }
 @media (prefers-color-scheme: light) {
   img.closed {
@@ -18,6 +19,7 @@
     --text-color: #ccc;
     --link-color: #5bf;
     --link-hover-color: black;
+    --border-color: #444;
   }
   img.closed {
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(-10deg);
@@ -122,7 +124,7 @@ a:hover span {
 }
 
 #summary li {
-  border: 2px solid white;
+  border: 2px solid var(--border-color);
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
@@ -141,21 +143,21 @@ table {
 }
 th,
 td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-left: none;
   border-top: none;
   padding: 8px;
 }
 th:first-child,
 td:first-child {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid var(--border-color);
 }
 tr:first-child th {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border-color);
 }
 th {
   background-color: var(--bg-color);
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -178,12 +180,12 @@ td.updated {
     display: block;
   }
   tr {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     margin-bottom: 5px;
   }
   td {
     border: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
     position: relative;
   }
   td:before {
