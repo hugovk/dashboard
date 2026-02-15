@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-02-14T04:13:45.749804+00:00",
+  "last_update": "2026-02-15T04:25:11.848860+00:00",
   "serhiy-storchaka": {
     "issues": 145,
     "prs": 88
@@ -30,7 +30,7 @@
   },
   "StanFromIreland": {
     "issues": 18,
-    "prs": 43
+    "prs": 44
   },
   "FFY00": {
     "issues": 41,
@@ -76,11 +76,11 @@
     "issues": 5,
     "prs": 27
   },
-  "jaraco": {
+  "brettcannon": {
     "issues": 30,
     "prs": 0
   },
-  "brettcannon": {
+  "jaraco": {
     "issues": 30,
     "prs": 0
   },
@@ -96,13 +96,13 @@
     "issues": 22,
     "prs": 6
   },
-  "AA-Turner": {
-    "issues": 9,
-    "prs": 18
-  },
   "vstinner": {
     "issues": 16,
     "prs": 11
+  },
+  "AA-Turner": {
+    "issues": 9,
+    "prs": 18
   },
   "nascheme": {
     "issues": 17,
@@ -144,13 +144,13 @@
     "issues": 10,
     "prs": 10
   },
-  "gaogaotiantian": {
-    "issues": 10,
-    "prs": 9
-  },
   "csabella": {
     "issues": 11,
     "prs": 8
+  },
+  "gaogaotiantian": {
+    "issues": 10,
+    "prs": 9
   },
   "pganssle": {
     "issues": 16,
@@ -164,15 +164,19 @@
     "issues": 17,
     "prs": 0
   },
-  "doko42": {
-    "issues": 16,
-    "prs": 0
-  },
   "isidentical": {
     "issues": 10,
     "prs": 6
   },
+  "doko42": {
+    "issues": 16,
+    "prs": 0
+  },
   "devdanzin": {
+    "issues": 12,
+    "prs": 3
+  },
+  "corona10": {
     "issues": 12,
     "prs": 3
   },
@@ -184,23 +188,23 @@
     "issues": 8,
     "prs": 7
   },
-  "corona10": {
-    "issues": 12,
-    "prs": 3
-  },
   "warsaw": {
     "issues": 13,
     "prs": 1
-  },
-  "kumaraditya303": {
-    "issues": 10,
-    "prs": 4
   },
   "rbtcollins": {
     "issues": 14,
     "prs": 0
   },
+  "kumaraditya303": {
+    "issues": 10,
+    "prs": 4
+  },
   "abalkin": {
+    "issues": 13,
+    "prs": 0
+  },
+  "ethanfurman": {
     "issues": 13,
     "prs": 0
   },
@@ -208,9 +212,17 @@
     "issues": 13,
     "prs": 0
   },
-  "ethanfurman": {
-    "issues": 13,
-    "prs": 0
+  "nedbat": {
+    "issues": 9,
+    "prs": 3
+  },
+  "iritkatriel": {
+    "issues": 10,
+    "prs": 2
+  },
+  "smontanaro": {
+    "issues": 11,
+    "prs": 1
   },
   "mdboom": {
     "issues": 10,
@@ -220,29 +232,21 @@
     "issues": 9,
     "prs": 3
   },
-  "iritkatriel": {
-    "issues": 10,
-    "prs": 2
-  },
-  "nedbat": {
-    "issues": 9,
-    "prs": 3
-  },
-  "smontanaro": {
-    "issues": 11,
-    "prs": 1
+  "tomasr8": {
+    "issues": 3,
+    "prs": 8
   },
   "Eclips4": {
     "issues": 8,
     "prs": 3
   },
-  "tomasr8": {
-    "issues": 3,
-    "prs": 8
-  },
   "zware": {
     "issues": 8,
     "prs": 3
+  },
+  "carljm": {
+    "issues": 9,
+    "prs": 1
   },
   "DinoV": {
     "issues": 8,
@@ -256,67 +260,43 @@
     "issues": 9,
     "prs": 1
   },
-  "carljm": {
+  "ambv": {
     "issues": 9,
-    "prs": 1
+    "prs": 0
   },
   "emmatyping": {
     "issues": 6,
     "prs": 3
   },
-  "ambv": {
-    "issues": 9,
-    "prs": 0
-  },
   "tirkarthi": {
     "issues": 9,
     "prs": 0
-  },
-  "arhadthedev": {
-    "issues": 5,
-    "prs": 3
-  },
-  "mdickinson": {
-    "issues": 7,
-    "prs": 1
   },
   "gvanrossum": {
     "issues": 7,
     "prs": 1
   },
-  "1st1": {
-    "issues": 6,
-    "prs": 2
+  "mdickinson": {
+    "issues": 7,
+    "prs": 1
   },
   "sweeneyde": {
     "issues": 6,
     "prs": 2
   },
+  "1st1": {
+    "issues": 6,
+    "prs": 2
+  },
+  "arhadthedev": {
+    "issues": 5,
+    "prs": 3
+  },
   "Yhg1s": {
     "issues": 5,
     "prs": 2
   },
-  "nanjekyejoannah": {
-    "issues": 3,
-    "prs": 4
-  },
   "cjw296": {
-    "issues": 7,
-    "prs": 0
-  },
-  "efimov-mikhail": {
-    "issues": 3,
-    "prs": 4
-  },
-  "ericvsmith": {
-    "issues": 7,
-    "prs": 0
-  },
-  "lysnikolaou": {
-    "issues": 4,
-    "prs": 3
-  },
-  "hauntsaninja": {
     "issues": 7,
     "prs": 0
   },
@@ -328,21 +308,29 @@
     "issues": 4,
     "prs": 3
   },
-  "scoder": {
-    "issues": 6,
+  "efimov-mikhail": {
+    "issues": 3,
+    "prs": 4
+  },
+  "lysnikolaou": {
+    "issues": 4,
+    "prs": 3
+  },
+  "nanjekyejoannah": {
+    "issues": 3,
+    "prs": 4
+  },
+  "hauntsaninja": {
+    "issues": 7,
+    "prs": 0
+  },
+  "ericvsmith": {
+    "issues": 7,
     "prs": 0
   },
   "asvetlov": {
     "issues": 5,
     "prs": 1
-  },
-  "mpage": {
-    "issues": 5,
-    "prs": 1
-  },
-  "pfmoore": {
-    "issues": 6,
-    "prs": 0
   },
   "orsenthil": {
     "issues": 6,
@@ -352,19 +340,35 @@
     "issues": 6,
     "prs": 0
   },
-  "shihai1991": {
-    "issues": 2,
-    "prs": 3
+  "scoder": {
+    "issues": 6,
+    "prs": 0
+  },
+  "mpage": {
+    "issues": 5,
+    "prs": 1
+  },
+  "pfmoore": {
+    "issues": 6,
+    "prs": 0
+  },
+  "berkerpeksag": {
+    "issues": 3,
+    "prs": 2
+  },
+  "zhangyangyu": {
+    "issues": 5,
+    "prs": 0
   },
   "CAM-Gerlach": {
     "issues": 3,
     "prs": 2
   },
-  "merwok": {
+  "freakboy3742": {
     "issues": 5,
     "prs": 0
   },
-  "zhangyangyu": {
+  "merwok": {
     "issues": 5,
     "prs": 0
   },
@@ -376,43 +380,35 @@
     "issues": 5,
     "prs": 0
   },
-  "freakboy3742": {
-    "issues": 5,
-    "prs": 0
+  "chris-eibl": {
+    "issues": 2,
+    "prs": 3
   },
   "matrixise": {
     "issues": 3,
     "prs": 2
   },
-  "berkerpeksag": {
-    "issues": 3,
-    "prs": 2
+  "shihai1991": {
+    "issues": 2,
+    "prs": 3
   },
-  "alex": {
-    "issues": 4,
-    "prs": 0
-  },
-  "briancurtin": {
-    "issues": 4,
-    "prs": 0
+  "savannahostrowski": {
+    "issues": 1,
+    "prs": 3
   },
   "mhsmith": {
     "issues": 4,
     "prs": 0
   },
-  "chris-eibl": {
-    "issues": 2,
-    "prs": 2
+  "malemburg": {
+    "issues": 4,
+    "prs": 0
   },
   "CuriousLearner": {
     "issues": 0,
     "prs": 4
   },
-  "malemburg": {
-    "issues": 4,
-    "prs": 0
-  },
-  "diegorusso": {
+  "briancurtin": {
     "issues": 4,
     "prs": 0
   },
@@ -420,9 +416,13 @@
     "issues": 3,
     "prs": 1
   },
-  "savannahostrowski": {
-    "issues": 1,
-    "prs": 3
+  "alex": {
+    "issues": 4,
+    "prs": 0
+  },
+  "diegorusso": {
+    "issues": 4,
+    "prs": 0
   },
   "voidspace": {
     "issues": 3,
@@ -432,10 +432,6 @@
     "issues": 3,
     "prs": 0
   },
-  "Mariatta": {
-    "issues": 2,
-    "prs": 1
-  },
   "sandrotosi": {
     "issues": 3,
     "prs": 0
@@ -444,23 +440,11 @@
     "issues": 3,
     "prs": 0
   },
-  "pradyunsg": {
-    "issues": 1,
+  "Mariatta": {
+    "issues": 2,
     "prs": 1
   },
-  "mitsuhiko": {
-    "issues": 2,
-    "prs": 0
-  },
-  "cfbolz": {
-    "issues": 2,
-    "prs": 0
-  },
   "tpn": {
-    "issues": 2,
-    "prs": 0
-  },
-  "jcea": {
     "issues": 2,
     "prs": 0
   },
@@ -468,7 +452,27 @@
     "issues": 2,
     "prs": 0
   },
+  "brianquinlan": {
+    "issues": 2,
+    "prs": 0
+  },
+  "cfbolz": {
+    "issues": 2,
+    "prs": 0
+  },
+  "pradyunsg": {
+    "issues": 1,
+    "prs": 1
+  },
+  "vsajip": {
+    "issues": 1,
+    "prs": 1
+  },
   "birkenfeld": {
+    "issues": 2,
+    "prs": 0
+  },
+  "mitsuhiko": {
     "issues": 2,
     "prs": 0
   },
@@ -476,35 +480,15 @@
     "issues": 1,
     "prs": 1
   },
-  "brianquinlan": {
-    "issues": 2,
-    "prs": 0
-  },
   "tim-one": {
     "issues": 2,
     "prs": 0
   },
-  "vsajip": {
-    "issues": 1,
-    "prs": 1
+  "jcea": {
+    "issues": 2,
+    "prs": 0
   },
   "dstufft": {
-    "issues": 1,
-    "prs": 0
-  },
-  "webknjaz": {
-    "issues": 0,
-    "prs": 1
-  },
-  "ammaraskar": {
-    "issues": 0,
-    "prs": 1
-  },
-  "tjguk": {
-    "issues": 1,
-    "prs": 0
-  },
-  "swtaarrs": {
     "issues": 1,
     "prs": 0
   },
@@ -512,19 +496,7 @@
     "issues": 1,
     "prs": 0
   },
-  "uriyyo": {
-    "issues": 0,
-    "prs": 1
-  },
-  "wolever": {
-    "issues": 1,
-    "prs": 0
-  },
-  "meadori": {
-    "issues": 1,
-    "prs": 0
-  },
-  "avassalotti": {
+  "maxking": {
     "issues": 1,
     "prs": 0
   },
@@ -532,7 +504,7 @@
     "issues": 1,
     "prs": 0
   },
-  "maxking": {
+  "meadori": {
     "issues": 1,
     "prs": 0
   },
@@ -540,7 +512,7 @@
     "issues": 0,
     "prs": 1
   },
-  "doerwalter": {
+  "tjguk": {
     "issues": 1,
     "prs": 0
   },
@@ -548,7 +520,35 @@
     "issues": 1,
     "prs": 0
   },
-  "Martiusweb": {
+  "akheron": {
+    "issues": 1,
+    "prs": 0
+  },
+  "freddrake": {
+    "issues": 1,
+    "prs": 0
+  },
+  "doerwalter": {
+    "issues": 1,
+    "prs": 0
+  },
+  "uriyyo": {
+    "issues": 0,
+    "prs": 1
+  },
+  "webknjaz": {
+    "issues": 0,
+    "prs": 1
+  },
+  "avassalotti": {
+    "issues": 1,
+    "prs": 0
+  },
+  "ammaraskar": {
+    "issues": 0,
+    "prs": 1
+  },
+  "lisroach": {
     "issues": 1,
     "prs": 0
   },
@@ -556,15 +556,15 @@
     "issues": 1,
     "prs": 0
   },
-  "akheron": {
+  "wolever": {
     "issues": 1,
     "prs": 0
   },
-  "lisroach": {
+  "Martiusweb": {
     "issues": 1,
     "prs": 0
   },
-  "freddrake": {
+  "swtaarrs": {
     "issues": 1,
     "prs": 0
   }
