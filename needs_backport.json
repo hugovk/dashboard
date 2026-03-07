@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-03-06T04:14:44.814032+00:00",
+  "last_update": "2026-03-07T04:06:39.121227+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -1046,107 +1046,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/131359/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
-        },
-        {
-          "url": "https://api.github.com/repos/python/cpython/issues/145507",
-          "repository_url": "https://api.github.com/repos/python/cpython",
-          "labels_url": "https://api.github.com/repos/python/cpython/issues/145507/labels{/name}",
-          "comments_url": "https://api.github.com/repos/python/cpython/issues/145507/comments",
-          "events_url": "https://api.github.com/repos/python/cpython/issues/145507/events",
-          "html_url": "https://github.com/python/cpython/pull/145507",
-          "id": 4023597471,
-          "node_id": "PR_kwDOBN0Z8c7H9co-",
-          "number": 145507,
-          "title": "gh-145506: Fixes CVE-2026-2297 by ensuring SourcelessFileLoader uses io.open_code",
-          "user": {
-            "login": "zooba",
-            "id": 1693688,
-            "node_id": "MDQ6VXNlcjE2OTM2ODg=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1693688?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/zooba",
-            "html_url": "https://github.com/zooba",
-            "followers_url": "https://api.github.com/users/zooba/followers",
-            "following_url": "https://api.github.com/users/zooba/following{/other_user}",
-            "gists_url": "https://api.github.com/users/zooba/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/zooba/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/zooba/subscriptions",
-            "organizations_url": "https://api.github.com/users/zooba/orgs",
-            "repos_url": "https://api.github.com/users/zooba/repos",
-            "events_url": "https://api.github.com/users/zooba/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/zooba/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [
-            {
-              "id": 2969585609,
-              "node_id": "MDU6TGFiZWwyOTY5NTg1NjA5",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.10",
-              "name": "needs backport to 3.10",
-              "color": "E99695",
-              "default": false,
-              "description": "only security fixes"
-            }
-          ],
-          "state": "closed",
-          "locked": false,
-          "assignees": [],
-          "milestone": {},
-          "comments": 6,
-          "created_at": "2026-03-04T18:59:56Z",
-          "updated_at": "2026-03-04T19:56:28Z",
-          "closed_at": "2026-03-04T19:55:53Z",
-          "assignee": {},
-          "author_association": "MEMBER",
-          "type": {},
-          "active_lock_reason": {},
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/python/cpython/pulls/145507",
-            "html_url": "https://github.com/python/cpython/pull/145507",
-            "diff_url": "https://github.com/python/cpython/pull/145507.diff",
-            "patch_url": "https://github.com/python/cpython/pull/145507.patch",
-            "merged_at": "2026-03-04T19:55:52Z"
-          },
-          "body": "\n\n<!-- gh-issue-number: gh-145506 -->\n* Issue: gh-145506\n<!-- /gh-issue-number -->\n",
-          "closed_by": {
-            "login": "zooba",
-            "id": 1693688,
-            "node_id": "MDQ6VXNlcjE2OTM2ODg=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1693688?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/zooba",
-            "html_url": "https://github.com/zooba",
-            "followers_url": "https://api.github.com/users/zooba/followers",
-            "following_url": "https://api.github.com/users/zooba/following{/other_user}",
-            "gists_url": "https://api.github.com/users/zooba/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/zooba/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/zooba/subscriptions",
-            "organizations_url": "https://api.github.com/users/zooba/orgs",
-            "repos_url": "https://api.github.com/users/zooba/repos",
-            "events_url": "https://api.github.com/users/zooba/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/zooba/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/python/cpython/issues/145507/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/python/cpython/issues/145507/timeline",
           "performed_via_github_app": {},
           "state_reason": {}
         }
