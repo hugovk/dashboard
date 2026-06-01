@@ -4,3 +4,7 @@ rules:
     config:
       policies:
         "*": ref-pin
+  secrets-outside-env:
+    config:
+      allow:
+        - DASHBOARD_GITHUB_TOOLS_TOKEN
