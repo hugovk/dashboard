@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-09T03:17:54.031589+00:00",
+  "last_update": "2026-06-10T03:17:03.821494+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -52,7 +52,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -107,7 +107,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 4,
           "created_at": "2026-06-01T16:53:58Z",
           "updated_at": "2026-06-01T20:02:57Z",
@@ -135,8 +135,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150725",
@@ -180,8 +180,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150725/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150676",
@@ -232,7 +232,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -278,7 +278,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 9,
           "created_at": "2026-05-31T17:04:48Z",
           "updated_at": "2026-06-02T08:03:55Z",
@@ -306,8 +306,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150676",
@@ -351,8 +351,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150676/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150437",
@@ -403,7 +403,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 8574425320,
@@ -440,7 +440,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 12,
           "created_at": "2026-05-25T22:38:58Z",
           "updated_at": "2026-06-07T14:56:33Z",
@@ -468,8 +468,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150437",
@@ -513,8 +513,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150437/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150179",
@@ -556,7 +556,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 8574425320,
@@ -580,16 +580,16 @@
           "state": "closed",
           "locked": false,
           "assignees": [],
-          "milestone": {},
+          "milestone": null,
           "comments": 6,
           "created_at": "2026-05-21T08:04:56Z",
           "updated_at": "2026-05-23T08:41:14Z",
           "closed_at": "2026-05-23T08:33:40Z",
-          "assignee": {},
+          "assignee": null,
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150179",
@@ -633,8 +633,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150179/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150024",
@@ -676,7 +676,7 @@
               "name": "awaiting merge",
               "color": "fbca04",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 8574425320,
@@ -722,7 +722,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 9,
           "created_at": "2026-05-18T19:35:18Z",
           "updated_at": "2026-05-19T22:11:35Z",
@@ -750,8 +750,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150024",
@@ -795,8 +795,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150024/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149996",
@@ -875,7 +875,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 5,
           "created_at": "2026-05-18T14:44:02Z",
           "updated_at": "2026-05-22T04:07:01Z",
@@ -903,8 +903,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149996",
@@ -948,8 +948,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149996/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/148769",
@@ -1000,7 +1000,7 @@
               "name": "skip issue",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 667924166,
@@ -1009,7 +1009,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 8574425320,
@@ -1046,7 +1046,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 6,
           "created_at": "2026-04-19T19:42:35Z",
           "updated_at": "2026-04-25T10:52:20Z",
@@ -1074,8 +1074,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/148769",
@@ -1119,8 +1119,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/148769/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/146644",
@@ -1171,7 +1171,7 @@
               "name": "skip issue",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 667924166,
@@ -1180,7 +1180,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 4019060898,
@@ -1235,7 +1235,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 8,
           "created_at": "2026-03-30T20:38:05Z",
           "updated_at": "2026-03-31T23:36:36Z",
@@ -1263,8 +1263,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/146644",
@@ -1308,8 +1308,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/146644/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/145522",
@@ -1360,7 +1360,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -1406,7 +1406,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 6,
           "created_at": "2026-03-05T03:25:59Z",
           "updated_at": "2026-05-03T23:08:49Z",
@@ -1434,8 +1434,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/145522",
@@ -1479,8 +1479,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/145522/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/144402",
@@ -1559,7 +1559,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 4,
           "created_at": "2026-02-02T17:56:18Z",
           "updated_at": "2026-05-02T20:57:03Z",
@@ -1587,8 +1587,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/144402",
@@ -1632,8 +1632,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/144402/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/143492",
@@ -1684,7 +1684,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -1730,7 +1730,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 8,
           "created_at": "2026-01-06T18:48:32Z",
           "updated_at": "2026-06-03T12:36:48Z",
@@ -1758,8 +1758,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/143492",
@@ -1803,8 +1803,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/143492/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/142529",
@@ -1846,7 +1846,7 @@
               "name": "awaiting review",
               "color": "fbca04",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -1892,7 +1892,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 17,
           "created_at": "2025-12-10T18:32:22Z",
           "updated_at": "2026-04-08T01:39:54Z",
@@ -1920,8 +1920,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/142529",
@@ -1965,8 +1965,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/142529/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150464",
@@ -2017,7 +2017,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -2054,7 +2054,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 2,
           "created_at": "2026-05-26T09:14:42Z",
           "updated_at": "2026-05-26T09:40:05Z",
@@ -2082,8 +2082,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150464",
@@ -2127,8 +2127,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150464/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/150158",
@@ -2198,7 +2198,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 10,
           "created_at": "2026-05-20T13:52:35Z",
           "updated_at": "2026-06-05T10:01:22Z",
@@ -2226,8 +2226,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/150158",
@@ -2271,8 +2271,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/150158/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/148964",
@@ -2323,7 +2323,7 @@
               "name": "skip issue",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 667924166,
@@ -2332,7 +2332,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 4095883204,
@@ -2378,7 +2378,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 2,
           "created_at": "2026-04-24T16:00:37Z",
           "updated_at": "2026-04-30T19:42:44Z",
@@ -2406,8 +2406,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/148964",
@@ -2451,8 +2451,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/148964/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/148623",
@@ -2522,7 +2522,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 11,
           "created_at": "2026-04-15T15:40:36Z",
           "updated_at": "2026-05-25T02:17:48Z",
@@ -2550,8 +2550,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/148623",
@@ -2595,8 +2595,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/148623/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/146005",
@@ -2666,7 +2666,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 17,
           "created_at": "2026-03-16T00:33:35Z",
           "updated_at": "2026-03-28T18:47:27Z",
@@ -2694,8 +2694,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/146005",
@@ -2739,8 +2739,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/146005/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/145828",
@@ -2810,7 +2810,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 4,
           "created_at": "2026-03-11T14:46:24Z",
           "updated_at": "2026-03-18T15:47:47Z",
@@ -2838,8 +2838,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/145828",
@@ -2883,8 +2883,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/145828/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/140989",
@@ -2935,7 +2935,7 @@
               "name": "skip issue",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 667924166,
@@ -2944,7 +2944,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 6924885615,
@@ -2981,7 +2981,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 14,
           "created_at": "2025-11-04T12:03:36Z",
           "updated_at": "2026-03-16T08:22:04Z",
@@ -3009,8 +3009,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/140989",
@@ -3054,179 +3054,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/140989/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
-        },
-        {
-          "url": "https://api.github.com/repos/python/cpython/issues/139368",
-          "repository_url": "https://api.github.com/repos/python/cpython",
-          "labels_url": "https://api.github.com/repos/python/cpython/issues/139368/labels{/name}",
-          "comments_url": "https://api.github.com/repos/python/cpython/issues/139368/comments",
-          "events_url": "https://api.github.com/repos/python/cpython/issues/139368/events",
-          "html_url": "https://github.com/python/cpython/pull/139368",
-          "id": 3458324409,
-          "node_id": "PR_kwDOBN0Z8c6qwX-B",
-          "number": 139368,
-          "title": "gh-90949: expose Expat API to tune exponential expansion protections",
-          "user": {
-            "login": "picnixz",
-            "id": 10796600,
-            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/picnixz",
-            "html_url": "https://github.com/picnixz",
-            "followers_url": "https://api.github.com/users/picnixz/followers",
-            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
-            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
-            "organizations_url": "https://api.github.com/users/picnixz/orgs",
-            "repos_url": "https://api.github.com/users/picnixz/repos",
-            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/picnixz/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [
-            {
-              "id": 2969585609,
-              "node_id": "MDU6TGFiZWwyOTY5NTg1NjA5",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.10",
-              "name": "needs backport to 3.10",
-              "color": "E99695",
-              "default": false,
-              "description": "only security fixes"
-            },
-            {
-              "id": 4109227084,
-              "node_id": "LA_kwDOBN0Z8c707dRM",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.11",
-              "name": "needs backport to 3.11",
-              "color": "E99695",
-              "default": false,
-              "description": "only security fixes"
-            },
-            {
-              "id": 5533425416,
-              "node_id": "LA_kwDOBN0Z8c8AAAABSdFfCA",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.12",
-              "name": "needs backport to 3.12",
-              "color": "E99695",
-              "default": false,
-              "description": "only security fixes"
-            },
-            {
-              "id": 6924885615,
-              "node_id": "LA_kwDOBN0Z8c8AAAABnMFebw",
-              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.13",
-              "name": "needs backport to 3.13",
-              "color": "c2e0c6",
-              "default": false,
-              "description": "bugs and security fixes"
-            }
-          ],
-          "state": "closed",
-          "locked": false,
-          "assignees": [
-            {
-              "login": "picnixz",
-              "id": 10796600,
-              "node_id": "MDQ6VXNlcjEwNzk2NjAw",
-              "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/picnixz",
-              "html_url": "https://github.com/picnixz",
-              "followers_url": "https://api.github.com/users/picnixz/followers",
-              "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
-              "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
-              "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
-              "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
-              "organizations_url": "https://api.github.com/users/picnixz/orgs",
-              "repos_url": "https://api.github.com/users/picnixz/repos",
-              "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
-              "received_events_url": "https://api.github.com/users/picnixz/received_events",
-              "type": "User",
-              "user_view_type": "public",
-              "site_admin": false
-            }
-          ],
-          "milestone": {},
-          "comments": 16,
-          "created_at": "2025-09-26T16:38:15Z",
-          "updated_at": "2026-05-26T20:44:40Z",
-          "closed_at": "2025-09-28T08:27:05Z",
-          "assignee": {
-            "login": "picnixz",
-            "id": 10796600,
-            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/picnixz",
-            "html_url": "https://github.com/picnixz",
-            "followers_url": "https://api.github.com/users/picnixz/followers",
-            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
-            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
-            "organizations_url": "https://api.github.com/users/picnixz/orgs",
-            "repos_url": "https://api.github.com/users/picnixz/repos",
-            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/picnixz/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "author_association": "MEMBER",
-          "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/python/cpython/pulls/139368",
-            "html_url": "https://github.com/python/cpython/pull/139368",
-            "diff_url": "https://github.com/python/cpython/pull/139368.diff",
-            "patch_url": "https://github.com/python/cpython/pull/139368.patch",
-            "merged_at": "2025-09-28T08:27:05Z"
-          },
-          "body": "This is built on top of #139366. \r\n\r\ncc @hartwork \n\n<!-- gh-issue-number: gh-90949 -->\n* Issue: gh-90949\n<!-- /gh-issue-number -->\n\r\n\r\n<!-- readthedocs-preview cpython-previews start -->\r\n----\n\ud83d\udcda Documentation preview \ud83d\udcda: https://cpython-previews--139368.org.readthedocs.build/\n\r\n<!-- readthedocs-preview cpython-previews end -->",
-          "closed_by": {
-            "login": "picnixz",
-            "id": 10796600,
-            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/picnixz",
-            "html_url": "https://github.com/picnixz",
-            "followers_url": "https://api.github.com/users/picnixz/followers",
-            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
-            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
-            "organizations_url": "https://api.github.com/users/picnixz/orgs",
-            "repos_url": "https://api.github.com/users/picnixz/repos",
-            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/picnixz/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "reactions": {
-            "url": "https://api.github.com/repos/python/cpython/issues/139368/reactions",
-            "total_count": 1,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 1,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/python/cpython/issues/139368/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/130101",
@@ -3296,7 +3125,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 8,
           "created_at": "2025-02-14T00:34:12Z",
           "updated_at": "2026-03-16T15:50:25Z",
@@ -3324,8 +3153,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/130101",
@@ -3369,8 +3198,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/130101/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/151054",
@@ -3440,7 +3269,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 5,
           "created_at": "2026-06-07T16:57:51Z",
           "updated_at": "2026-06-07T18:39:58Z",
@@ -3468,8 +3297,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/151054",
@@ -3513,8 +3342,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/151054/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149815",
@@ -3593,7 +3422,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 6,
           "created_at": "2026-05-13T23:36:18Z",
           "updated_at": "2026-05-20T19:07:59Z",
@@ -3621,8 +3450,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149815",
@@ -3666,8 +3495,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149815/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149233",
@@ -3746,7 +3575,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 12,
           "created_at": "2026-05-01T14:48:34Z",
           "updated_at": "2026-05-20T19:08:13Z",
@@ -3774,8 +3603,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149233",
@@ -3819,8 +3648,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149233/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/148559",
@@ -3908,7 +3737,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 4,
           "created_at": "2026-04-14T15:20:36Z",
           "updated_at": "2026-04-15T10:11:25Z",
@@ -3936,8 +3765,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/148559",
@@ -3981,8 +3810,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/148559/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/146399",
@@ -4070,7 +3899,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 20,
           "created_at": "2026-03-25T00:09:20Z",
           "updated_at": "2026-04-15T10:21:27Z",
@@ -4098,8 +3927,8 @@
           },
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/146399",
@@ -4143,51 +3972,42 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/146399/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
-          "url": "https://api.github.com/repos/python/cpython/issues/150600",
+          "url": "https://api.github.com/repos/python/cpython/issues/139368",
           "repository_url": "https://api.github.com/repos/python/cpython",
-          "labels_url": "https://api.github.com/repos/python/cpython/issues/150600/labels{/name}",
-          "comments_url": "https://api.github.com/repos/python/cpython/issues/150600/comments",
-          "events_url": "https://api.github.com/repos/python/cpython/issues/150600/events",
-          "html_url": "https://github.com/python/cpython/pull/150600",
-          "id": 4553878971,
-          "node_id": "PR_kwDOBN0Z8c7g6zVs",
-          "number": 150600,
-          "title": "gh-150599: Prevent bz2 decompressor reuse after errors",
+          "labels_url": "https://api.github.com/repos/python/cpython/issues/139368/labels{/name}",
+          "comments_url": "https://api.github.com/repos/python/cpython/issues/139368/comments",
+          "events_url": "https://api.github.com/repos/python/cpython/issues/139368/events",
+          "html_url": "https://github.com/python/cpython/pull/139368",
+          "id": 3458324409,
+          "node_id": "PR_kwDOBN0Z8c6qwX-B",
+          "number": 139368,
+          "title": "gh-90949: expose Expat API to tune exponential expansion protections",
           "user": {
-            "login": "StanFromIreland",
-            "id": 89152624,
-            "node_id": "MDQ6VXNlcjg5MTUyNjI0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/89152624?v=4",
+            "login": "picnixz",
+            "id": 10796600,
+            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/StanFromIreland",
-            "html_url": "https://github.com/StanFromIreland",
-            "followers_url": "https://api.github.com/users/StanFromIreland/followers",
-            "following_url": "https://api.github.com/users/StanFromIreland/following{/other_user}",
-            "gists_url": "https://api.github.com/users/StanFromIreland/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/StanFromIreland/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/StanFromIreland/subscriptions",
-            "organizations_url": "https://api.github.com/users/StanFromIreland/orgs",
-            "repos_url": "https://api.github.com/users/StanFromIreland/repos",
-            "events_url": "https://api.github.com/users/StanFromIreland/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/StanFromIreland/received_events",
+            "url": "https://api.github.com/users/picnixz",
+            "html_url": "https://github.com/picnixz",
+            "followers_url": "https://api.github.com/users/picnixz/followers",
+            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
+            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
+            "organizations_url": "https://api.github.com/users/picnixz/orgs",
+            "repos_url": "https://api.github.com/users/picnixz/repos",
+            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/picnixz/received_events",
             "type": "User",
             "user_view_type": "public",
             "site_admin": false
           },
           "labels": [
-            {
-              "id": 544837556,
-              "node_id": "MDU6TGFiZWw1NDQ4Mzc1NTY=",
-              "url": "https://api.github.com/repos/python/cpython/labels/type-security",
-              "name": "type-security",
-              "color": "b60205",
-              "default": false,
-              "description": "A security issue"
-            },
             {
               "id": 2969585609,
               "node_id": "MDU6TGFiZWwyOTY5NTg1NjA5",
@@ -4205,108 +4025,117 @@
               "color": "E99695",
               "default": false,
               "description": "only security fixes"
+            },
+            {
+              "id": 5533425416,
+              "node_id": "LA_kwDOBN0Z8c8AAAABSdFfCA",
+              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.12",
+              "name": "needs backport to 3.12",
+              "color": "E99695",
+              "default": false,
+              "description": "only security fixes"
             }
           ],
           "state": "closed",
           "locked": false,
           "assignees": [
             {
-              "login": "emmatyping",
-              "id": 9504279,
-              "node_id": "MDQ6VXNlcjk1MDQyNzk=",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9504279?v=4",
+              "login": "picnixz",
+              "id": 10796600,
+              "node_id": "MDQ6VXNlcjEwNzk2NjAw",
+              "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
               "gravatar_id": "",
-              "url": "https://api.github.com/users/emmatyping",
-              "html_url": "https://github.com/emmatyping",
-              "followers_url": "https://api.github.com/users/emmatyping/followers",
-              "following_url": "https://api.github.com/users/emmatyping/following{/other_user}",
-              "gists_url": "https://api.github.com/users/emmatyping/gists{/gist_id}",
-              "starred_url": "https://api.github.com/users/emmatyping/starred{/owner}{/repo}",
-              "subscriptions_url": "https://api.github.com/users/emmatyping/subscriptions",
-              "organizations_url": "https://api.github.com/users/emmatyping/orgs",
-              "repos_url": "https://api.github.com/users/emmatyping/repos",
-              "events_url": "https://api.github.com/users/emmatyping/events{/privacy}",
-              "received_events_url": "https://api.github.com/users/emmatyping/received_events",
+              "url": "https://api.github.com/users/picnixz",
+              "html_url": "https://github.com/picnixz",
+              "followers_url": "https://api.github.com/users/picnixz/followers",
+              "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
+              "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
+              "organizations_url": "https://api.github.com/users/picnixz/orgs",
+              "repos_url": "https://api.github.com/users/picnixz/repos",
+              "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/picnixz/received_events",
               "type": "User",
               "user_view_type": "public",
               "site_admin": false
             }
           ],
-          "milestone": {},
-          "comments": 16,
-          "created_at": "2026-05-30T08:37:45Z",
-          "updated_at": "2026-06-08T20:01:18Z",
-          "closed_at": "2026-06-07T15:19:06Z",
+          "milestone": null,
+          "comments": 17,
+          "created_at": "2025-09-26T16:38:15Z",
+          "updated_at": "2026-06-09T13:20:00Z",
+          "closed_at": "2025-09-28T08:27:05Z",
           "assignee": {
-            "login": "emmatyping",
-            "id": 9504279,
-            "node_id": "MDQ6VXNlcjk1MDQyNzk=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/9504279?v=4",
+            "login": "picnixz",
+            "id": 10796600,
+            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/emmatyping",
-            "html_url": "https://github.com/emmatyping",
-            "followers_url": "https://api.github.com/users/emmatyping/followers",
-            "following_url": "https://api.github.com/users/emmatyping/following{/other_user}",
-            "gists_url": "https://api.github.com/users/emmatyping/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/emmatyping/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/emmatyping/subscriptions",
-            "organizations_url": "https://api.github.com/users/emmatyping/orgs",
-            "repos_url": "https://api.github.com/users/emmatyping/repos",
-            "events_url": "https://api.github.com/users/emmatyping/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/emmatyping/received_events",
+            "url": "https://api.github.com/users/picnixz",
+            "html_url": "https://github.com/picnixz",
+            "followers_url": "https://api.github.com/users/picnixz/followers",
+            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
+            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
+            "organizations_url": "https://api.github.com/users/picnixz/orgs",
+            "repos_url": "https://api.github.com/users/picnixz/repos",
+            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/picnixz/received_events",
             "type": "User",
             "user_view_type": "public",
             "site_admin": false
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
-            "url": "https://api.github.com/repos/python/cpython/pulls/150600",
-            "html_url": "https://github.com/python/cpython/pull/150600",
-            "diff_url": "https://github.com/python/cpython/pull/150600.diff",
-            "patch_url": "https://github.com/python/cpython/pull/150600.patch",
-            "merged_at": "2026-06-07T15:19:06Z"
+            "url": "https://api.github.com/repos/python/cpython/pulls/139368",
+            "html_url": "https://github.com/python/cpython/pull/139368",
+            "diff_url": "https://github.com/python/cpython/pull/139368.diff",
+            "patch_url": "https://github.com/python/cpython/pull/139368.patch",
+            "merged_at": "2025-09-28T08:27:05Z"
           },
-          "body": "<!--\r\nThanks for your contribution!\r\nPlease read this comment in its entirety. It's quite important.\r\n\r\n# Pull Request title\r\n\r\nIt should be in the following format:\r\n\r\n```\r\ngh-NNNNNN: Summary of the changes made\r\n```\r\n\r\nWhere: gh-NNNNNN refers to the GitHub issue number.\r\n\r\nMost PRs will require an issue number. Trivial changes, like fixing a typo, do not need an issue.\r\n\r\n# Backport Pull Request title\r\n\r\nIf this is a backport PR (PR made against branches other than `main`),\r\nplease ensure that the PR title is in the following format:\r\n\r\n```\r\n[X.Y] <title from the original PR> (GH-NNNNNN)\r\n```\r\n\r\nWhere: [X.Y] is the branch name, for example: [3.13].\r\n\r\nGH-NNNNNN refers to the PR number from `main`.\r\n\r\n-->\r\n\n\n<!-- gh-issue-number: gh-150599 -->\n* Issue: gh-150599\n<!-- /gh-issue-number -->\n",
+          "body": "This is built on top of #139366. \r\n\r\ncc @hartwork \n\n<!-- gh-issue-number: gh-90949 -->\n* Issue: gh-90949\n<!-- /gh-issue-number -->\n\r\n\r\n<!-- readthedocs-preview cpython-previews start -->\r\n----\n\ud83d\udcda Documentation preview \ud83d\udcda: https://cpython-previews--139368.org.readthedocs.build/\n\r\n<!-- readthedocs-preview cpython-previews end -->",
           "closed_by": {
-            "login": "emmatyping",
-            "id": 9504279,
-            "node_id": "MDQ6VXNlcjk1MDQyNzk=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/9504279?v=4",
+            "login": "picnixz",
+            "id": 10796600,
+            "node_id": "MDQ6VXNlcjEwNzk2NjAw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10796600?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/emmatyping",
-            "html_url": "https://github.com/emmatyping",
-            "followers_url": "https://api.github.com/users/emmatyping/followers",
-            "following_url": "https://api.github.com/users/emmatyping/following{/other_user}",
-            "gists_url": "https://api.github.com/users/emmatyping/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/emmatyping/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/emmatyping/subscriptions",
-            "organizations_url": "https://api.github.com/users/emmatyping/orgs",
-            "repos_url": "https://api.github.com/users/emmatyping/repos",
-            "events_url": "https://api.github.com/users/emmatyping/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/emmatyping/received_events",
+            "url": "https://api.github.com/users/picnixz",
+            "html_url": "https://github.com/picnixz",
+            "followers_url": "https://api.github.com/users/picnixz/followers",
+            "following_url": "https://api.github.com/users/picnixz/following{/other_user}",
+            "gists_url": "https://api.github.com/users/picnixz/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/picnixz/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/picnixz/subscriptions",
+            "organizations_url": "https://api.github.com/users/picnixz/orgs",
+            "repos_url": "https://api.github.com/users/picnixz/repos",
+            "events_url": "https://api.github.com/users/picnixz/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/picnixz/received_events",
             "type": "User",
             "user_view_type": "public",
             "site_admin": false
           },
           "reactions": {
-            "url": "https://api.github.com/repos/python/cpython/issues/150600/reactions",
-            "total_count": 0,
+            "url": "https://api.github.com/repos/python/cpython/issues/139368/reactions",
+            "total_count": 1,
             "+1": 0,
             "-1": 0,
             "laugh": 0,
             "hooray": 0,
             "confused": 0,
-            "heart": 0,
+            "heart": 1,
             "rocket": 0,
             "eyes": 0
           },
-          "timeline_url": "https://api.github.com/repos/python/cpython/issues/150600/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "timeline_url": "https://api.github.com/repos/python/cpython/issues/139368/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149699",
@@ -4385,7 +4214,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 15,
           "created_at": "2026-05-11T20:16:40Z",
           "updated_at": "2026-05-18T19:07:31Z",
@@ -4413,8 +4242,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149699",
@@ -4458,8 +4287,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149699/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149080",
@@ -4556,7 +4385,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 22,
           "created_at": "2026-04-27T21:38:23Z",
           "updated_at": "2026-06-03T11:44:46Z",
@@ -4584,8 +4413,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149080",
@@ -4629,8 +4458,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149080/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/131359",
@@ -4672,7 +4501,7 @@
               "name": "skip news",
               "color": "000000",
               "default": false,
-              "description": {}
+              "description": null
             },
             {
               "id": 2969585609,
@@ -4718,7 +4547,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 10,
           "created_at": "2025-03-17T13:58:40Z",
           "updated_at": "2026-02-10T10:45:10Z",
@@ -4746,8 +4575,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/131359",
@@ -4791,8 +4620,8 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/131359/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
         },
         {
           "url": "https://api.github.com/repos/python/cpython/issues/149487",
@@ -4862,7 +4691,7 @@
               "site_admin": false
             }
           ],
-          "milestone": {},
+          "milestone": null,
           "comments": 11,
           "created_at": "2026-05-07T09:31:17Z",
           "updated_at": "2026-06-04T09:47:14Z",
@@ -4890,8 +4719,8 @@
           },
           "author_association": "MEMBER",
           "issue_field_values": [],
-          "type": {},
-          "active_lock_reason": {},
+          "type": null,
+          "active_lock_reason": null,
           "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/python/cpython/pulls/149487",
@@ -4935,8 +4764,174 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/python/cpython/issues/149487/timeline",
-          "performed_via_github_app": {},
-          "state_reason": {}
+          "performed_via_github_app": null,
+          "state_reason": null
+        }
+      ]
+    },
+    {
+      "PRs with backports": [
+        {
+          "url": "https://api.github.com/repos/python/cpython/issues/151074",
+          "repository_url": "https://api.github.com/repos/python/cpython",
+          "labels_url": "https://api.github.com/repos/python/cpython/issues/151074/labels{/name}",
+          "comments_url": "https://api.github.com/repos/python/cpython/issues/151074/comments",
+          "events_url": "https://api.github.com/repos/python/cpython/issues/151074/events",
+          "html_url": "https://github.com/python/cpython/pull/151074",
+          "id": 4612288769,
+          "node_id": "PR_kwDOBN0Z8c7j3vCH",
+          "number": 151074,
+          "title": "gh-150285: Fix too long docstrings in the asyncio package",
+          "user": {
+            "login": "serhiy-storchaka",
+            "id": 3659035,
+            "node_id": "MDQ6VXNlcjM2NTkwMzU=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/serhiy-storchaka",
+            "html_url": "https://github.com/serhiy-storchaka",
+            "followers_url": "https://api.github.com/users/serhiy-storchaka/followers",
+            "following_url": "https://api.github.com/users/serhiy-storchaka/following{/other_user}",
+            "gists_url": "https://api.github.com/users/serhiy-storchaka/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/serhiy-storchaka/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/serhiy-storchaka/subscriptions",
+            "organizations_url": "https://api.github.com/users/serhiy-storchaka/orgs",
+            "repos_url": "https://api.github.com/users/serhiy-storchaka/repos",
+            "events_url": "https://api.github.com/users/serhiy-storchaka/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/serhiy-storchaka/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [
+            {
+              "id": 538516109,
+              "node_id": "MDU6TGFiZWw1Mzg1MTYxMDk=",
+              "url": "https://api.github.com/repos/python/cpython/labels/docs",
+              "name": "docs",
+              "color": "09fc59",
+              "default": false,
+              "description": "Documentation in the Doc dir"
+            },
+            {
+              "id": 667924166,
+              "node_id": "MDU6TGFiZWw2Njc5MjQxNjY=",
+              "url": "https://api.github.com/repos/python/cpython/labels/skip%20news",
+              "name": "skip news",
+              "color": "000000",
+              "default": false,
+              "description": null
+            },
+            {
+              "id": 6924885615,
+              "node_id": "LA_kwDOBN0Z8c8AAAABnMFebw",
+              "url": "https://api.github.com/repos/python/cpython/labels/needs%20backport%20to%203.13",
+              "name": "needs backport to 3.13",
+              "color": "c2e0c6",
+              "default": false,
+              "description": "bugs and security fixes"
+            }
+          ],
+          "state": "closed",
+          "locked": false,
+          "assignees": [
+            {
+              "login": "serhiy-storchaka",
+              "id": 3659035,
+              "node_id": "MDQ6VXNlcjM2NTkwMzU=",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/serhiy-storchaka",
+              "html_url": "https://github.com/serhiy-storchaka",
+              "followers_url": "https://api.github.com/users/serhiy-storchaka/followers",
+              "following_url": "https://api.github.com/users/serhiy-storchaka/following{/other_user}",
+              "gists_url": "https://api.github.com/users/serhiy-storchaka/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/serhiy-storchaka/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/serhiy-storchaka/subscriptions",
+              "organizations_url": "https://api.github.com/users/serhiy-storchaka/orgs",
+              "repos_url": "https://api.github.com/users/serhiy-storchaka/repos",
+              "events_url": "https://api.github.com/users/serhiy-storchaka/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/serhiy-storchaka/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            }
+          ],
+          "milestone": null,
+          "comments": 5,
+          "created_at": "2026-06-08T11:00:22Z",
+          "updated_at": "2026-06-09T16:17:31Z",
+          "closed_at": "2026-06-09T16:13:35Z",
+          "assignee": {
+            "login": "serhiy-storchaka",
+            "id": 3659035,
+            "node_id": "MDQ6VXNlcjM2NTkwMzU=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/serhiy-storchaka",
+            "html_url": "https://github.com/serhiy-storchaka",
+            "followers_url": "https://api.github.com/users/serhiy-storchaka/followers",
+            "following_url": "https://api.github.com/users/serhiy-storchaka/following{/other_user}",
+            "gists_url": "https://api.github.com/users/serhiy-storchaka/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/serhiy-storchaka/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/serhiy-storchaka/subscriptions",
+            "organizations_url": "https://api.github.com/users/serhiy-storchaka/orgs",
+            "repos_url": "https://api.github.com/users/serhiy-storchaka/repos",
+            "events_url": "https://api.github.com/users/serhiy-storchaka/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/serhiy-storchaka/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "author_association": "MEMBER",
+          "issue_field_values": [],
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/python/cpython/pulls/151074",
+            "html_url": "https://github.com/python/cpython/pull/151074",
+            "diff_url": "https://github.com/python/cpython/pull/151074.diff",
+            "patch_url": "https://github.com/python/cpython/pull/151074.patch",
+            "merged_at": "2026-06-09T16:13:35Z"
+          },
+          "body": "\n\n<!-- gh-issue-number: gh-150285 -->\n* Issue: gh-150285\n<!-- /gh-issue-number -->\n",
+          "closed_by": {
+            "login": "serhiy-storchaka",
+            "id": 3659035,
+            "node_id": "MDQ6VXNlcjM2NTkwMzU=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/serhiy-storchaka",
+            "html_url": "https://github.com/serhiy-storchaka",
+            "followers_url": "https://api.github.com/users/serhiy-storchaka/followers",
+            "following_url": "https://api.github.com/users/serhiy-storchaka/following{/other_user}",
+            "gists_url": "https://api.github.com/users/serhiy-storchaka/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/serhiy-storchaka/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/serhiy-storchaka/subscriptions",
+            "organizations_url": "https://api.github.com/users/serhiy-storchaka/orgs",
+            "repos_url": "https://api.github.com/users/serhiy-storchaka/repos",
+            "events_url": "https://api.github.com/users/serhiy-storchaka/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/serhiy-storchaka/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "reactions": {
+            "url": "https://api.github.com/repos/python/cpython/issues/151074/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/python/cpython/issues/151074/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null
         }
       ]
     }
