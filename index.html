@@ -37,6 +37,12 @@
           >
         </li>
         <li>
+          <a href="#auto-merge-prs-with-failing-ci"
+            ><span id="count-auto-merge-failing-ci">...</span>Auto-merge PRs with
+            failing CI
+          </a>
+        </li>
+        <li>
           <a href="#prs-with-backports"
             ><span id="count-prs-with-backports">...</span>PRs with backports</a
           >
@@ -133,6 +139,27 @@
 
       <div id="loading-needs-backport">Loading...</div>
 
+      <h2>Auto-merge PRs with failing CI</h2>
+      <p>
+        These PRs have auto-merge enabled but the CI is failing, so they won't be merged
+        until the CI is fixed or re-run.
+      </p>
+      <table class="sortable" id="table-auto-merge-failing-ci">
+        <thead>
+          <tr>
+            <th>Count</th>
+            <th>No.</th>
+            <th>PR</th>
+            <th>Failing checks</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="loading-auto-merge-failing-ci">Loading...</div>
+
       <h2>PRs with backports</h2>
       <p>
         These PRs have a "needs backport to 3.x" label and the backport has been made.
@@ -175,6 +202,7 @@
     </div>
 
     <script src="orphaned_backports.js"></script>
+    <script src="auto_merge_failing_ci.js"></script>
     <script src="potential_closeable_issues.js"></script>
     <script src="needs_backport.js"></script>
     <script src="create_toc.js"></script>

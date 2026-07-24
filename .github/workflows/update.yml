@@ -79,12 +79,19 @@ jobs:
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
+      - name: Find auto-merge PRs with failing CI
+        run: |
+          uv run github-tools/auto_merge_failing_ci.py --dry-run --json -n "$NUMBER_TO_CHECK"
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
       - name: Prepare files
         run: |
           mkdir -p build/team/
           cp style.css ./*.html ./*.js ./*.svg build/
           ls github-tools/
           mv team/* build/team/
+          mv github-tools/auto_merge_failing_ci.json build/
           mv github-tools/issues_by_dev.json build/
           mv github-tools/needs_backport.json build/
           mv github-tools/orphaned_backports.json build/

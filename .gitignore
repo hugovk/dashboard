@@ -171,6 +171,7 @@ cython_debug/
 .pypirc
 
 github-tools
+auto_merge_failing_ci.json
 issues_by_dev.json
 needs_backport.json
 orphaned_backports.json
