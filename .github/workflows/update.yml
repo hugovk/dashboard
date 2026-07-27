@@ -73,15 +73,15 @@ jobs:
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
-      - name: Find potential closeable issues
-        run: |
-          uv run github-tools/potential_closeable_issues.py --dry-run --json -n "$NUMBER_TO_CHECK"
-        env:
-          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
-
       - name: Find auto-merge PRs with failing CI
         run: |
           uv run github-tools/auto_merge_failing_ci.py --dry-run --json -n "$NUMBER_TO_CHECK"
+        env:
+          GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
+
+      - name: Find potential closeable issues
+        run: |
+          uv run github-tools/potential_closeable_issues.py --dry-run --json -n "$NUMBER_TO_CHECK"
         env:
           GITHUB_TOOLS_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOOLS_TOKEN }}
 
