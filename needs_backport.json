@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-20T02:40:29.545013+00:00",
+  "last_update": "2026-09-21T02:44:01.268805+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -74,9 +74,9 @@
             }
           ],
           "milestone": null,
-          "comments": 7,
+          "comments": 8,
           "created_at": "2026-09-19T11:14:21Z",
-          "updated_at": "2026-09-19T21:29:27Z",
+          "updated_at": "2026-09-20T16:36:56Z",
           "closed_at": "2026-09-19T21:03:40Z",
           "assignee": {
             "login": "pablogsal",
