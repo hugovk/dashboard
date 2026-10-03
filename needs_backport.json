@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-02T02:42:07.461192+00:00",
+  "last_update": "2026-10-03T02:43:53.539662+00:00",
   "reasons": [
     {
       "PRs missing backports": [
@@ -2423,8 +2423,28 @@
               "color": "E99695",
               "default": false,
               "description": "only security fixes",
-              "archived_at": null,
-              "archived_by": null
+              "archived_at": "2026-10-02T09:59:57Z",
+              "archived_by": {
+                "login": "hugovk",
+                "id": 1324225,
+                "node_id": "MDQ6VXNlcjEzMjQyMjU=",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1324225?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/hugovk",
+                "html_url": "https://github.com/hugovk",
+                "followers_url": "https://api.github.com/users/hugovk/followers",
+                "following_url": "https://api.github.com/users/hugovk/following{/other_user}",
+                "gists_url": "https://api.github.com/users/hugovk/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/hugovk/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/hugovk/subscriptions",
+                "organizations_url": "https://api.github.com/users/hugovk/orgs",
+                "repos_url": "https://api.github.com/users/hugovk/repos",
+                "events_url": "https://api.github.com/users/hugovk/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/hugovk/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              }
             },
             {
               "id": 4019305351,
@@ -2591,8 +2611,28 @@
               "color": "E99695",
               "default": false,
               "description": "only security fixes",
-              "archived_at": null,
-              "archived_by": null
+              "archived_at": "2026-10-02T09:59:57Z",
+              "archived_by": {
+                "login": "hugovk",
+                "id": 1324225,
+                "node_id": "MDQ6VXNlcjEzMjQyMjU=",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1324225?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/hugovk",
+                "html_url": "https://github.com/hugovk",
+                "followers_url": "https://api.github.com/users/hugovk/followers",
+                "following_url": "https://api.github.com/users/hugovk/following{/other_user}",
+                "gists_url": "https://api.github.com/users/hugovk/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/hugovk/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/hugovk/subscriptions",
+                "organizations_url": "https://api.github.com/users/hugovk/orgs",
+                "repos_url": "https://api.github.com/users/hugovk/repos",
+                "events_url": "https://api.github.com/users/hugovk/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/hugovk/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              }
             },
             {
               "id": 4109227084,
@@ -2748,8 +2788,28 @@
               "color": "E99695",
               "default": false,
               "description": "only security fixes",
-              "archived_at": null,
-              "archived_by": null
+              "archived_at": "2026-10-02T09:59:57Z",
+              "archived_by": {
+                "login": "hugovk",
+                "id": 1324225,
+                "node_id": "MDQ6VXNlcjEzMjQyMjU=",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1324225?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/hugovk",
+                "html_url": "https://github.com/hugovk",
+                "followers_url": "https://api.github.com/users/hugovk/followers",
+                "following_url": "https://api.github.com/users/hugovk/following{/other_user}",
+                "gists_url": "https://api.github.com/users/hugovk/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/hugovk/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/hugovk/subscriptions",
+                "organizations_url": "https://api.github.com/users/hugovk/orgs",
+                "repos_url": "https://api.github.com/users/hugovk/repos",
+                "events_url": "https://api.github.com/users/hugovk/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/hugovk/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              }
             },
             {
               "id": 4109227084,
