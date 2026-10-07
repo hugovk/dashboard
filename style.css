@@ -56,12 +56,14 @@ h2:hover .anchor-link {
 
 #table-of-contents {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   padding: 0;
 }
 #table-of-contents li {
   padding-left: 5px;
+  white-space: nowrap;
 }
 #table-of-contents li:not(:last-child)::after {
   content: " | ";
