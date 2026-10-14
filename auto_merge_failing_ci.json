@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-13T02:51:40.715916+00:00",
+  "last_update": "2026-10-14T02:36:50.361082+00:00",
   "candidates": [
     {
       "url": "https://api.github.com/repos/python/cpython/pulls/153015",
@@ -39,7 +39,7 @@
       "updated_at": "2026-10-12T18:54:53Z",
       "closed_at": null,
       "merged_at": null,
-      "merge_commit_sha": "69054506676b9223195aa01cccd8f56acec18726",
+      "merge_commit_sha": "0677fc99aed2afa018871912b88d33ef7454cc3e",
       "assignees": [],
       "requested_reviewers": [
         {
@@ -324,16 +324,16 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2026-10-13T01:21:16Z",
-          "pushed_at": "2026-10-13T01:23:25Z",
+          "updated_at": "2026-10-14T02:24:43Z",
+          "pushed_at": "2026-10-13T23:57:21Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
           "svn_url": "https://github.com/python/cpython",
           "homepage": "https://www.python.org",
-          "size": 889288,
-          "stargazers_count": 77626,
-          "watchers_count": 77626,
+          "size": 890262,
+          "stargazers_count": 77725,
+          "watchers_count": 77725,
           "language": "Python",
           "has_issues": true,
           "has_projects": true,
@@ -341,11 +341,11 @@
           "has_wiki": false,
           "has_pages": false,
           "has_discussions": false,
-          "forks_count": 38105,
+          "forks_count": 38277,
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9714,
+          "open_issues_count": 9749,
           "license": {
             "key": "other",
             "name": "Other",
@@ -360,9 +360,9 @@
           "pull_request_creation_policy": "all",
           "topics": [],
           "visibility": "public",
-          "forks": 38105,
-          "open_issues": 9714,
-          "watchers": 77626,
+          "forks": 38277,
+          "open_issues": 9749,
+          "watchers": 77725,
           "default_branch": "main"
         }
       },
