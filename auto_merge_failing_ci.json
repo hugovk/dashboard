@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-14T02:36:50.361082+00:00",
+  "last_update": "2026-10-15T02:37:32.688502+00:00",
   "candidates": [
     {
       "url": "https://api.github.com/repos/python/cpython/pulls/153015",
@@ -36,10 +36,10 @@
       },
       "body": "In a free-threading build, `gc.set_debug()` stored `gcstate->debug` with a\nplain write while `gc.get_debug()` and the collector read it without\nsynchronisation. `gc.set_debug()` takes no lock and, unlike\n`gc_set_threshold_impl()`, does not run under `_PyEval_StopTheWorld()`, so\nThreadSanitizer reports a write/write race on `gcstate->debug`.\n\nThis accesses the flag with `FT_ATOMIC_STORE_INT_RELAXED` /\n`FT_ATOMIC_LOAD_INT_RELAXED` in `gc_set_debug_impl()` / `gc_get_debug_impl()`\nand in the collector reads in `Python/gc_free_threading.c`. Four of those\ncollector reads run outside stop-the-world (in `delete_garbage()`,\n`handle_legacy_finalizers()`, and two stats reads in `gc_collect_main()`) and\nrace the write directly; the read in `gc_collect_internal()` runs under\nstop-the-world and is made atomic only for consistency. Relaxed ordering is\ncorrect for an independent `int` flag, matching how `gcstate->enabled` and\n`sys` dlopenflags (gh-151644) are already handled.\n\n`Python/gc.c` (the default GIL build) is left unchanged: it has no concurrent\naccess, and `FT_ATOMIC_*` compiles to a plain load/store there anyway.\n\nVerified with a `--with-thread-sanitizer --disable-gil` build stressing\nconcurrent `gc.set_debug()` / `gc.get_debug()` plus a thread churning cyclic\ngarbage:\n\n```\nBefore: WARNING: ThreadSanitizer: data race ... Write of size 4 ... gc_set_debug (2 reports)\nAfter:  0 data races\n```\n\nA regression test is added under `Lib/test/test_free_threading/`.\n\n\n<!-- gh-issue-number: gh-153014 -->\n* Issue: gh-153014\n<!-- /gh-issue-number -->\n",
       "created_at": "2026-07-04T10:21:14Z",
-      "updated_at": "2026-10-12T18:54:53Z",
+      "updated_at": "2026-10-15T02:36:18Z",
       "closed_at": null,
       "merged_at": null,
-      "merge_commit_sha": "0677fc99aed2afa018871912b88d33ef7454cc3e",
+      "merge_commit_sha": "ac9f7b9f264b9cb98f9708243d591f410598d49c",
       "assignees": [],
       "requested_reviewers": [
         {
@@ -95,11 +95,11 @@
       "review_comments_url": "https://api.github.com/repos/python/cpython/pulls/153015/comments",
       "review_comment_url": "https://api.github.com/repos/python/cpython/pulls/comments{/number}",
       "comments_url": "https://api.github.com/repos/python/cpython/issues/153015/comments",
-      "statuses_url": "https://api.github.com/repos/python/cpython/statuses/918a9e8086a8ed2425695587806c8ca42f36acba",
+      "statuses_url": "https://api.github.com/repos/python/cpython/statuses/37581c5ca01418f98ce6ec4fc15b4fa0d3baf830",
       "head": {
         "label": "tonghuaroot:gc-debug-ft-race",
         "ref": "gc-debug-ft-race",
-        "sha": "918a9e8086a8ed2425695587806c8ca42f36acba",
+        "sha": "37581c5ca01418f98ce6ec4fc15b4fa0d3baf830",
         "user": {
           "login": "tonghuaroot",
           "id": 23011166,
@@ -190,13 +190,13 @@
           "deployments_url": "https://api.github.com/repos/tonghuaroot/cpython/deployments",
           "created_at": "2026-01-17T15:20:11Z",
           "updated_at": "2026-09-30T12:09:27Z",
-          "pushed_at": "2026-10-12T23:07:46Z",
+          "pushed_at": "2026-10-14T16:52:55Z",
           "git_url": "git://github.com/tonghuaroot/cpython.git",
           "ssh_url": "git@github.com:tonghuaroot/cpython.git",
           "clone_url": "https://github.com/tonghuaroot/cpython.git",
           "svn_url": "https://github.com/tonghuaroot/cpython",
           "homepage": "https://www.python.org",
-          "size": 715353,
+          "size": 715816,
           "stargazers_count": 0,
           "watchers_count": 0,
           "language": "Python",
@@ -234,7 +234,7 @@
       "base": {
         "label": "python:main",
         "ref": "main",
-        "sha": "e29cce5ea81f94de936521cada96f2ffd5d42df1",
+        "sha": "25883627946b7cbcf7286acfe2a2019382375325",
         "user": {
           "login": "python",
           "id": 1525981,
@@ -324,16 +324,16 @@
           "releases_url": "https://api.github.com/repos/python/cpython/releases{/id}",
           "deployments_url": "https://api.github.com/repos/python/cpython/deployments",
           "created_at": "2017-02-10T19:23:51Z",
-          "updated_at": "2026-10-14T02:24:43Z",
-          "pushed_at": "2026-10-13T23:57:21Z",
+          "updated_at": "2026-10-15T02:10:17Z",
+          "pushed_at": "2026-10-14T22:53:16Z",
           "git_url": "git://github.com/python/cpython.git",
           "ssh_url": "git@github.com:python/cpython.git",
           "clone_url": "https://github.com/python/cpython.git",
           "svn_url": "https://github.com/python/cpython",
           "homepage": "https://www.python.org",
-          "size": 890262,
-          "stargazers_count": 77725,
-          "watchers_count": 77725,
+          "size": 890290,
+          "stargazers_count": 77554,
+          "watchers_count": 77554,
           "language": "Python",
           "has_issues": true,
           "has_projects": true,
@@ -341,11 +341,11 @@
           "has_wiki": false,
           "has_pages": false,
           "has_discussions": false,
-          "forks_count": 38277,
+          "forks_count": 38373,
           "mirror_url": null,
           "archived": false,
           "disabled": false,
-          "open_issues_count": 9749,
+          "open_issues_count": 9750,
           "license": {
             "key": "other",
             "name": "Other",
@@ -360,9 +360,9 @@
           "pull_request_creation_policy": "all",
           "topics": [],
           "visibility": "public",
-          "forks": 38277,
-          "open_issues": 9749,
-          "watchers": 77725,
+          "forks": 38373,
+          "open_issues": 9750,
+          "watchers": 77554,
           "default_branch": "main"
         }
       },
@@ -389,7 +389,7 @@
           "href": "https://api.github.com/repos/python/cpython/pulls/153015/commits"
         },
         "statuses": {
-          "href": "https://api.github.com/repos/python/cpython/statuses/918a9e8086a8ed2425695587806c8ca42f36acba"
+          "href": "https://api.github.com/repos/python/cpython/statuses/37581c5ca01418f98ce6ec4fc15b4fa0d3baf830"
         }
       },
       "author_association": "CONTRIBUTOR",
@@ -426,10 +426,10 @@
       "rebaseable": false,
       "mergeable_state": "blocked",
       "merged_by": null,
-      "comments": 6,
+      "comments": 7,
       "review_comments": 2,
       "maintainer_can_modify": true,
-      "commits": 6,
+      "commits": 7,
       "additions": 19,
       "deletions": 11,
       "changed_files": 3,
