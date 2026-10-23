@@ -7,6 +7,7 @@ They're candidates for closing.
 # requires-python = ">=3.11"
 # dependencies = [
 #     "pygithub>=2",
+#     "requests",
 #     "rich",
 # ]
 # ///
@@ -18,6 +19,7 @@ import datetime as dt
 import json
 import logging
 import os
+import time
 from typing import Any, TypeAlias
 
 from github import (  # pip install PyGitHub
@@ -29,6 +31,7 @@ from github import (  # pip install PyGitHub
 from github.GithubRetry import GithubRetry
 from github.Issue import Issue
 from github.Repository import Repository
+from requests.exceptions import RetryError  # pip install requests
 from rich import print  # pip install rich
 
 IssueData: TypeAlias = dict[str, Any]
@@ -41,6 +44,27 @@ logging.getLogger("github").setLevel(logging.INFO)
 GITHUB_TOKEN = os.environ["GITHUB_TOOLS_TOKEN"]
 
 
+class BackoffRetry(GithubRetry):
+    """GithubRetry that really backs off on server errors.
+
+    urllib3 sleeps for a response's Retry-After header instead of the
+    exponential backoff when the header is present. GitHub sends a tiny one
+    on 5xx, so a burst of 503s burned all retries in about 20 seconds. For
+    server errors, sleep for whichever is longer. Rate limits (403/429) keep
+    the default behaviour, which GithubRetry depends on.
+    """
+
+    def sleep(self, response=None) -> None:
+        if response is not None and response.status >= 500:
+            retry_after = self.get_retry_after(response) or 0
+            backoff = max(retry_after, self.get_backoff_time())
+            if backoff > 0:
+                print(f"[yellow]HTTP {response.status}: retry in {backoff:g}s[/yellow]")
+                time.sleep(backoff)
+            return
+        super().sleep(response)
+
+
 def make_github() -> Github:
     """Client that sleeps out rate limits and retries transient errors.
 
@@ -48,8 +72,12 @@ def make_github() -> Github:
     and appends it to status_forcelist. As well as server errors, retry 401:
     GitHub intermittently rejects a valid token with "Bad credentials" at a
     random point in a long request stream; it succeeds on resend.
+
+    20 retries with backoff_factor=2 and urllib3's 120s cap means a sustained
+    outage is tolerated for about 30 minutes before giving up.
     """
-    retry = GithubRetry(
+    retry = BackoffRetry(
+        total=20,
         backoff_factor=2,
         status_forcelist=[401, 429, *range(500, 600)],
     )
@@ -108,6 +136,13 @@ def check_issue(repo: Repository, issue: Issue) -> list[IssueData]:
             # long-merged PRs. Skip this PR rather than abort the whole run.
             message = e.data.get("message", e)
             print(f"[yellow]PR {pr_number} skipped: {message}[/yellow]")
+            continue
+        except RetryError as e:
+            # Retries exhausted on a run of 5xx responses. Skip this PR rather
+            # than lose the whole run; the issue is rechecked next time. Its
+            # state is unknown, so don't suggest closing the issue.
+            print(f"[yellow]PR {pr_number} skipped: {e}[/yellow]")
+            states.append("unknown")
             continue
 
         if pr.merged:
