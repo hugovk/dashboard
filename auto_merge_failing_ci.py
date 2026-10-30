@@ -17,40 +17,16 @@ import argparse
 import os
 from typing import Any, TypeAlias
 
-from github.PullRequest import PullRequest  # pip install PyGitHub
-from github.Repository import Repository
 from rich import print  # pip install rich
 
-from potential_closeable_issues import (
+from github_utils import (
+    get_failing_checks,
     make_github,
     save_json,
     sort_by_to_sort_and_direction,
 )
 
 PR: TypeAlias = dict[str, Any]
-
-
-FAILING_CONCLUSIONS = ("failure", "timed_out")
-FAILING_STATES = ("failure", "error")
-
-# Aggregate check that just mirrors the other checks
-IGNORED_CHECKS = ("All required checks pass",)
-
-
-def get_failing_checks(repo: Repository, pr: PullRequest) -> list[str]:
-    """Names of failing check runs and commit statuses for the PR's head commit."""
-    commit = repo.get_commit(pr.head.sha)
-    failing = set()
-
-    for run in commit.get_check_runs():
-        if run.conclusion in FAILING_CONCLUSIONS and run.name not in IGNORED_CHECKS:
-            failing.add(run.name)
-
-    for status in commit.get_combined_status().statuses:
-        if status.state in FAILING_STATES:
-            failing.add(status.context)
-
-    return sorted(failing)
 
 
 def check_prs(

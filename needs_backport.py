@@ -31,7 +31,7 @@ from typing import Any, TypeAlias
 from github.Repository import Repository  # pip install PyGitHub
 from rich import print  # pip install rich
 
-from potential_closeable_issues import (
+from github_utils import (
     make_github,
     save_json,
     sort_by_to_sort_and_direction,

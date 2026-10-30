@@ -22,8 +22,8 @@ from github.PullRequest import PullRequest  # pip install PyGitHub
 from github.Repository import Repository
 from rich import print  # pip install rich
 
-from auto_merge_failing_ci import get_failing_checks
-from potential_closeable_issues import (
+from github_utils import (
+    get_failing_checks,
     make_github,
     save_json,
     sort_by_to_sort_and_direction,

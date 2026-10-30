@@ -27,7 +27,7 @@ from prettytable import PrettyTable, TableStyle  # pip install "prettytable>=3.1
 from rich import print  # pip install rich
 from rich.progress import track
 
-from potential_closeable_issues import make_github, save_json
+from github_utils import make_github, save_json
 
 URL = "https://raw.githubusercontent.com/python/devguide/main/core-team/core-team.csv"
 REPO = "https://github.com/python/cpython"
