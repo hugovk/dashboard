@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const countCell = document.createElement("td");
           const prNumberCell = document.createElement("td");
           const titleCell = document.createElement("td");
+          const checksCell = document.createElement("td");
           const createdCell = document.createElement("td");
           const updatedCell = document.createElement("td");
           const authorCell = document.createElement("td");
@@ -31,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
           titleLink.href = candidate.html_url;
           titleLink.textContent = candidate.title;
           titleCell.appendChild(titleLink);
+
+          checksCell.textContent = (candidate.failing_checks || []).join(", ");
 
           createdCell.textContent = candidate.created_at.split("T")[0];
           updatedCell.textContent = candidate.updated_at.split("T")[0];
@@ -49,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
           row.appendChild(countCell);
           row.appendChild(prNumberCell);
           row.appendChild(titleCell);
+          row.appendChild(checksCell);
           row.appendChild(createdCell);
           row.appendChild(updatedCell);
           row.appendChild(authorCell);

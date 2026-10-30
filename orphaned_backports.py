@@ -22,6 +22,7 @@ from github.PullRequest import PullRequest  # pip install PyGitHub
 from github.Repository import Repository
 from rich import print  # pip install rich
 
+from auto_merge_failing_ci import get_failing_checks
 from potential_closeable_issues import (
     make_github,
     save_json,
@@ -94,7 +95,10 @@ def check_prs(
             continue
 
         if is_linked_issue_closed(repo, pr):
-            candidates.append(pr.raw_data)
+            failing_checks = get_failing_checks(repo, pr)
+            if failing_checks:
+                print("  [red]" + ", ".join(failing_checks) + "[/red]")
+            candidates.append(pr.raw_data | {"failing_checks": failing_checks})
 
         if pr_count >= start + number - 1:
             return candidates
